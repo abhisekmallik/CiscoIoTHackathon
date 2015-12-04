@@ -1,0 +1,24 @@
+platform :ios, '8.0'
+
+target 'SmartShop' do
+    
+    pod 'ApiAI/AudioFileConverter'
+    pod 'ApiAI/VoiceFileRequest'
+    pod 'AFNetworking'
+    pod 'MRProgress'
+    
+end
+
+target 'S-Shop' do
+    
+end
+
+target 'S-Shop Extension' do
+    platform :watchos, '2.0'
+    
+    pod 'ApiAI/VoiceFileRequest'
+    pod 'ApiAI/ResponseMapping'
+    pod 'AFNetworking'
+    
+end
+

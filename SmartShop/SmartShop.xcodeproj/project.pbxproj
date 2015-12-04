@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		312DE0BEC76568996E968574 /* libPods-SmartShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */; };
+		5021BCF6BE2E8E3B62923A75 /* libPods-S-Shop Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECDABC8528F43C5EFB9E04E /* libPods-S-Shop Extension.a */; };
+		520415B51C115CE6001586D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415B41C115CE6001586D5 /* main.m */; };
+		520415B81C115CE6001586D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415B71C115CE6001586D5 /* AppDelegate.m */; };
+		520415BB1C115CE6001586D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415BA1C115CE6001586D5 /* ViewController.m */; };
+		520415BE1C115CE6001586D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520415BC1C115CE6001586D5 /* Main.storyboard */; };
+		520415C11C115CE6001586D5 /* SmartShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 520415BF1C115CE6001586D5 /* SmartShop.xcdatamodeld */; };
+		520415C31C115CE6001586D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520415C21C115CE6001586D5 /* Assets.xcassets */; };
+		520415C61C115CE6001586D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520415C41C115CE6001586D5 /* LaunchScreen.storyboard */; };
+		520415D11C115CE6001586D5 /* SmartShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415D01C115CE6001586D5 /* SmartShopTests.m */; };
+		520415DC1C115CE6001586D5 /* SmartShopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415DB1C115CE6001586D5 /* SmartShopUITests.m */; };
+		520415EF1C115DAE001586D5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520415ED1C115DAE001586D5 /* Interface.storyboard */; };
+		520415F11C115DAE001586D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520415F01C115DAE001586D5 /* Assets.xcassets */; };
+		520415F81C115DAE001586D5 /* S-Shop Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 520415F71C115DAE001586D5 /* S-Shop Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		520416001C115DAE001586D5 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415FF1C115DAE001586D5 /* InterfaceController.m */; };
+		520416031C115DAE001586D5 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 520416021C115DAE001586D5 /* ExtensionDelegate.m */; };
+		520416061C115DAE001586D5 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520416051C115DAE001586D5 /* NotificationController.m */; };
+		520416081C115DAE001586D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520416071C115DAE001586D5 /* Assets.xcassets */; };
+		5204160C1C115DAE001586D5 /* S-Shop.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 520415EB1C115DAE001586D5 /* S-Shop.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		520415CD1C115CE6001586D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520415A81C115CE6001586D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520415AF1C115CE6001586D5;
+			remoteInfo = SmartShop;
+		};
+		520415D81C115CE6001586D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520415A81C115CE6001586D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520415AF1C115CE6001586D5;
+			remoteInfo = SmartShop;
+		};
+		520415F91C115DAE001586D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520415A81C115CE6001586D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520415F61C115DAE001586D5;
+			remoteInfo = "S-Shop Extension";
+		};
+		5204160A1C115DAE001586D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520415A81C115CE6001586D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520415EA1C115DAE001586D5;
+			remoteInfo = "S-Shop";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		520416101C115DAE001586D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				520415F81C115DAE001586D5 /* S-Shop Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520416141C115DAE001586D5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5204160C1C115DAE001586D5 /* S-Shop.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		520415B01C115CE6001586D5 /* SmartShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		520415B41C115CE6001586D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		520415B61C115CE6001586D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		520415B71C115CE6001586D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		520415B91C115CE6001586D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		520415BA1C115CE6001586D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		520415BD1C115CE6001586D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		520415C01C115CE6001586D5 /* SmartShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartShop.xcdatamodel; sourceTree = "<group>"; };
+		520415C21C115CE6001586D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		520415C51C115CE6001586D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		520415C71C115CE6001586D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520415CC1C115CE6001586D5 /* SmartShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		520415D01C115CE6001586D5 /* SmartShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartShopTests.m; sourceTree = "<group>"; };
+		520415D21C115CE6001586D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520415D71C115CE6001586D5 /* SmartShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		520415DB1C115CE6001586D5 /* SmartShopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartShopUITests.m; sourceTree = "<group>"; };
+		520415DD1C115CE6001586D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520415EB1C115DAE001586D5 /* S-Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S-Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		520415EE1C115DAE001586D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		520415F01C115DAE001586D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		520415F21C115DAE001586D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520415F71C115DAE001586D5 /* S-Shop Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "S-Shop Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		520415FD1C115DAE001586D5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		520415FE1C115DAE001586D5 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		520415FF1C115DAE001586D5 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		520416011C115DAE001586D5 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		520416021C115DAE001586D5 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		520416041C115DAE001586D5 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		520416051C115DAE001586D5 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		520416071C115DAE001586D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		520416091C115DAE001586D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EDAC1D9F9C13D531291225 /* Pods-S-Shop Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-Shop Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-S-Shop Extension/Pods-S-Shop Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartShop/Pods-SmartShop.debug.xcconfig"; sourceTree = "<group>"; };
+		6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8A7A4DEF3E0F1F1CF7AB86 /* Pods-S-Shop Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-Shop Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-S-Shop Extension/Pods-S-Shop Extension.release.xcconfig"; sourceTree = "<group>"; };
+		7ECDABC8528F43C5EFB9E04E /* libPods-S-Shop Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-S-Shop Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DDA3CD0E0EE8BBAADC7BE7 /* Pods-SmartShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartShop/Pods-SmartShop.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		520415AD1C115CE6001586D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312DE0BEC76568996E968574 /* libPods-SmartShop.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415C91C115CE6001586D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415D41C115CE6001586D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415F41C115DAE001586D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5021BCF6BE2E8E3B62923A75 /* libPods-S-Shop Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520415A71C115CE6001586D5 = {
+			isa = PBXGroup;
+			children = (
+				520415B21C115CE6001586D5 /* SmartShop */,
+				520415CF1C115CE6001586D5 /* SmartShopTests */,
+				520415DA1C115CE6001586D5 /* SmartShopUITests */,
+				520415EC1C115DAE001586D5 /* S-Shop */,
+				520415FB1C115DAE001586D5 /* S-Shop Extension */,
+				520415B11C115CE6001586D5 /* Products */,
+				587D39017F746B58932E6690 /* Pods */,
+				6F00F0D46E1742161536694C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		520415B11C115CE6001586D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				520415B01C115CE6001586D5 /* SmartShop.app */,
+				520415CC1C115CE6001586D5 /* SmartShopTests.xctest */,
+				520415D71C115CE6001586D5 /* SmartShopUITests.xctest */,
+				520415EB1C115DAE001586D5 /* S-Shop.app */,
+				520415F71C115DAE001586D5 /* S-Shop Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		520415B21C115CE6001586D5 /* SmartShop */ = {
+			isa = PBXGroup;
+			children = (
+				520415B61C115CE6001586D5 /* AppDelegate.h */,
+				520415B71C115CE6001586D5 /* AppDelegate.m */,
+				520415B91C115CE6001586D5 /* ViewController.h */,
+				520415BA1C115CE6001586D5 /* ViewController.m */,
+				520415BC1C115CE6001586D5 /* Main.storyboard */,
+				520415C21C115CE6001586D5 /* Assets.xcassets */,
+				520415C41C115CE6001586D5 /* LaunchScreen.storyboard */,
+				520415C71C115CE6001586D5 /* Info.plist */,
+				520415BF1C115CE6001586D5 /* SmartShop.xcdatamodeld */,
+				520415B31C115CE6001586D5 /* Supporting Files */,
+			);
+			path = SmartShop;
+			sourceTree = "<group>";
+		};
+		520415B31C115CE6001586D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				520415B41C115CE6001586D5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		520415CF1C115CE6001586D5 /* SmartShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				520415D01C115CE6001586D5 /* SmartShopTests.m */,
+				520415D21C115CE6001586D5 /* Info.plist */,
+			);
+			path = SmartShopTests;
+			sourceTree = "<group>";
+		};
+		520415DA1C115CE6001586D5 /* SmartShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				520415DB1C115CE6001586D5 /* SmartShopUITests.m */,
+				520415DD1C115CE6001586D5 /* Info.plist */,
+			);
+			path = SmartShopUITests;
+			sourceTree = "<group>";
+		};
+		520415EC1C115DAE001586D5 /* S-Shop */ = {
+			isa = PBXGroup;
+			children = (
+				520415ED1C115DAE001586D5 /* Interface.storyboard */,
+				520415F01C115DAE001586D5 /* Assets.xcassets */,
+				520415F21C115DAE001586D5 /* Info.plist */,
+			);
+			path = "S-Shop";
+			sourceTree = "<group>";
+		};
+		520415FB1C115DAE001586D5 /* S-Shop Extension */ = {
+			isa = PBXGroup;
+			children = (
+				520415FE1C115DAE001586D5 /* InterfaceController.h */,
+				520415FF1C115DAE001586D5 /* InterfaceController.m */,
+				520416011C115DAE001586D5 /* ExtensionDelegate.h */,
+				520416021C115DAE001586D5 /* ExtensionDelegate.m */,
+				520416041C115DAE001586D5 /* NotificationController.h */,
+				520416051C115DAE001586D5 /* NotificationController.m */,
+				520416071C115DAE001586D5 /* Assets.xcassets */,
+				520416091C115DAE001586D5 /* Info.plist */,
+				520415FC1C115DAE001586D5 /* Supporting Files */,
+			);
+			path = "S-Shop Extension";
+			sourceTree = "<group>";
+		};
+		520415FC1C115DAE001586D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				520415FD1C115DAE001586D5 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		587D39017F746B58932E6690 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52EDAC1D9F9C13D531291225 /* Pods-S-Shop Extension.debug.xcconfig */,
+				7B8A7A4DEF3E0F1F1CF7AB86 /* Pods-S-Shop Extension.release.xcconfig */,
+				5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */,
+				D1DDA3CD0E0EE8BBAADC7BE7 /* Pods-SmartShop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F00F0D46E1742161536694C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ECDABC8528F43C5EFB9E04E /* libPods-S-Shop Extension.a */,
+				6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		520415AF1C115CE6001586D5 /* SmartShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520415E01C115CE6001586D5 /* Build configuration list for PBXNativeTarget "SmartShop" */;
+			buildPhases = (
+				A9A7F9A5223B864BC816BF34 /* Check Pods Manifest.lock */,
+				520415AC1C115CE6001586D5 /* Sources */,
+				520415AD1C115CE6001586D5 /* Frameworks */,
+				520415AE1C115CE6001586D5 /* Resources */,
+				520416141C115DAE001586D5 /* Embed Watch Content */,
+				6350296E046EE65535832BE8 /* Embed Pods Frameworks */,
+				A78327252B958607E61E28DF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5204160B1C115DAE001586D5 /* PBXTargetDependency */,
+			);
+			name = SmartShop;
+			productName = SmartShop;
+			productReference = 520415B01C115CE6001586D5 /* SmartShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		520415CB1C115CE6001586D5 /* SmartShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520415E31C115CE6001586D5 /* Build configuration list for PBXNativeTarget "SmartShopTests" */;
+			buildPhases = (
+				520415C81C115CE6001586D5 /* Sources */,
+				520415C91C115CE6001586D5 /* Frameworks */,
+				520415CA1C115CE6001586D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				520415CE1C115CE6001586D5 /* PBXTargetDependency */,
+			);
+			name = SmartShopTests;
+			productName = SmartShopTests;
+			productReference = 520415CC1C115CE6001586D5 /* SmartShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		520415D61C115CE6001586D5 /* SmartShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520415E61C115CE6001586D5 /* Build configuration list for PBXNativeTarget "SmartShopUITests" */;
+			buildPhases = (
+				520415D31C115CE6001586D5 /* Sources */,
+				520415D41C115CE6001586D5 /* Frameworks */,
+				520415D51C115CE6001586D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				520415D91C115CE6001586D5 /* PBXTargetDependency */,
+			);
+			name = SmartShopUITests;
+			productName = SmartShopUITests;
+			productReference = 520415D71C115CE6001586D5 /* SmartShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		520415EA1C115DAE001586D5 /* S-Shop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520416111C115DAE001586D5 /* Build configuration list for PBXNativeTarget "S-Shop" */;
+			buildPhases = (
+				520415E91C115DAE001586D5 /* Resources */,
+				520416101C115DAE001586D5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				520415FA1C115DAE001586D5 /* PBXTargetDependency */,
+			);
+			name = "S-Shop";
+			productName = "S-Shop";
+			productReference = 520415EB1C115DAE001586D5 /* S-Shop.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		520415F61C115DAE001586D5 /* S-Shop Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5204160D1C115DAE001586D5 /* Build configuration list for PBXNativeTarget "S-Shop Extension" */;
+			buildPhases = (
+				77466803E69FABFB52AF5B2E /* Check Pods Manifest.lock */,
+				520415F31C115DAE001586D5 /* Sources */,
+				520415F41C115DAE001586D5 /* Frameworks */,
+				520415F51C115DAE001586D5 /* Resources */,
+				734F051BC95F8818A0868D06 /* Embed Pods Frameworks */,
+				824A1527F94AF1A6B2014A89 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "S-Shop Extension";
+			productName = "S-Shop Extension";
+			productReference = 520415F71C115DAE001586D5 /* S-Shop Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		520415A81C115CE6001586D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Arun Ramakani";
+				TargetAttributes = {
+					520415AF1C115CE6001586D5 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					520415CB1C115CE6001586D5 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 520415AF1C115CE6001586D5;
+					};
+					520415D61C115CE6001586D5 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 520415AF1C115CE6001586D5;
+					};
+					520415EA1C115DAE001586D5 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					520415F61C115DAE001586D5 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 520415AB1C115CE6001586D5 /* Build configuration list for PBXProject "SmartShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 520415A71C115CE6001586D5;
+			productRefGroup = 520415B11C115CE6001586D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				520415AF1C115CE6001586D5 /* SmartShop */,
+				520415CB1C115CE6001586D5 /* SmartShopTests */,
+				520415D61C115CE6001586D5 /* SmartShopUITests */,
+				520415EA1C115DAE001586D5 /* S-Shop */,
+				520415F61C115DAE001586D5 /* S-Shop Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		520415AE1C115CE6001586D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520415C61C115CE6001586D5 /* LaunchScreen.storyboard in Resources */,
+				520415C31C115CE6001586D5 /* Assets.xcassets in Resources */,
+				520415BE1C115CE6001586D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415CA1C115CE6001586D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415D51C115CE6001586D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415E91C115DAE001586D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520415F11C115DAE001586D5 /* Assets.xcassets in Resources */,
+				520415EF1C115DAE001586D5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415F51C115DAE001586D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520416081C115DAE001586D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6350296E046EE65535832BE8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartShop/Pods-SmartShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734F051BC95F8818A0868D06 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-S-Shop Extension/Pods-S-Shop Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77466803E69FABFB52AF5B2E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		824A1527F94AF1A6B2014A89 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-S-Shop Extension/Pods-S-Shop Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A78327252B958607E61E28DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartShop/Pods-SmartShop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A7F9A5223B864BC816BF34 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		520415AC1C115CE6001586D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520415BB1C115CE6001586D5 /* ViewController.m in Sources */,
+				520415B81C115CE6001586D5 /* AppDelegate.m in Sources */,
+				520415B51C115CE6001586D5 /* main.m in Sources */,
+				520415C11C115CE6001586D5 /* SmartShop.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415C81C115CE6001586D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520415D11C115CE6001586D5 /* SmartShopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415D31C115CE6001586D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520415DC1C115CE6001586D5 /* SmartShopUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520415F31C115DAE001586D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520416031C115DAE001586D5 /* ExtensionDelegate.m in Sources */,
+				520416001C115DAE001586D5 /* InterfaceController.m in Sources */,
+				520416061C115DAE001586D5 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		520415CE1C115CE6001586D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520415AF1C115CE6001586D5 /* SmartShop */;
+			targetProxy = 520415CD1C115CE6001586D5 /* PBXContainerItemProxy */;
+		};
+		520415D91C115CE6001586D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520415AF1C115CE6001586D5 /* SmartShop */;
+			targetProxy = 520415D81C115CE6001586D5 /* PBXContainerItemProxy */;
+		};
+		520415FA1C115DAE001586D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520415F61C115DAE001586D5 /* S-Shop Extension */;
+			targetProxy = 520415F91C115DAE001586D5 /* PBXContainerItemProxy */;
+		};
+		5204160B1C115DAE001586D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520415EA1C115DAE001586D5 /* S-Shop */;
+			targetProxy = 5204160A1C115DAE001586D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		520415BC1C115CE6001586D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520415BD1C115CE6001586D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		520415C41C115CE6001586D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520415C51C115CE6001586D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		520415ED1C115DAE001586D5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520415EE1C115DAE001586D5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		520415DE1C115CE6001586D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		520415DF1C115CE6001586D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		520415E11C115CE6001586D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		520415E21C115CE6001586D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1DDA3CD0E0EE8BBAADC7BE7 /* Pods-SmartShop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		520415E41C115CE6001586D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartShopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShop.app/SmartShop";
+			};
+			name = Debug;
+		};
+		520415E51C115CE6001586D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartShopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShop.app/SmartShop";
+			};
+			name = Release;
+		};
+		520415E71C115CE6001586D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartShop;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		520415E81C115CE6001586D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartShop;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		5204160E1C115DAE001586D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52EDAC1D9F9C13D531291225 /* Pods-S-Shop Extension.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "S-Shop Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5204160F1C115DAE001586D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B8A7A4DEF3E0F1F1CF7AB86 /* Pods-S-Shop Extension.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "S-Shop Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		520416121C115DAE001586D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = S_Shop_Extension;
+				INFOPLIST_FILE = "S-Shop/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		520416131C115DAE001586D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = S_Shop_Extension;
+				INFOPLIST_FILE = "S-Shop/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		520415AB1C115CE6001586D5 /* Build configuration list for PBXProject "SmartShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520415DE1C115CE6001586D5 /* Debug */,
+				520415DF1C115CE6001586D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520415E01C115CE6001586D5 /* Build configuration list for PBXNativeTarget "SmartShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520415E11C115CE6001586D5 /* Debug */,
+				520415E21C115CE6001586D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520415E31C115CE6001586D5 /* Build configuration list for PBXNativeTarget "SmartShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520415E41C115CE6001586D5 /* Debug */,
+				520415E51C115CE6001586D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520415E61C115CE6001586D5 /* Build configuration list for PBXNativeTarget "SmartShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520415E71C115CE6001586D5 /* Debug */,
+				520415E81C115CE6001586D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5204160D1C115DAE001586D5 /* Build configuration list for PBXNativeTarget "S-Shop Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5204160E1C115DAE001586D5 /* Debug */,
+				5204160F1C115DAE001586D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520416111C115DAE001586D5 /* Build configuration list for PBXNativeTarget "S-Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520416121C115DAE001586D5 /* Debug */,
+				520416131C115DAE001586D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		520415BF1C115CE6001586D5 /* SmartShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				520415C01C115CE6001586D5 /* SmartShop.xcdatamodel */,
+			);
+			currentVersion = 520415C01C115CE6001586D5 /* SmartShop.xcdatamodel */;
+			path = SmartShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 520415A81C115CE6001586D5 /* Project object */;
+}
