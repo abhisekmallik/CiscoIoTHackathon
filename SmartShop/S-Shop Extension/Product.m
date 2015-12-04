@@ -10,6 +10,9 @@
 
 #define nameKey                 @"name"
 #define priceKey                @"price"
+#define sectionKey                @"section"
+
+
 
 @implementation Product
 
@@ -20,8 +23,9 @@
     
     if (self) {
         
-        self.name                          = [aDecoder decodeObjectForKey:nameKey];
-        self.price                   = [aDecoder decodeObjectForKey:priceKey];
+        self.name                       = [aDecoder decodeObjectForKey:nameKey];
+        self.price                      = [aDecoder decodeObjectForKey:priceKey];
+        self.section                    = [aDecoder decodeObjectForKey:sectionKey];
         
     }
     
@@ -34,6 +38,14 @@
     
     [aCoder encodeObject:self.name forKey:nameKey];
     [aCoder encodeObject:self.price forKey:priceKey];
+    [aCoder encodeObject:self.section forKey:sectionKey];
+    
+}
+
+- (BOOL)isEqual:(id)object {
+    
+    Product *comObj = (Product*) object;
+    return self.name == comObj.name;
     
 }
 

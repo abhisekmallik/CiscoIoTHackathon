@@ -8,6 +8,7 @@
 
 #import "InterfaceController.h"
 #import <ApiAI/ApiAI.h>
+#import "Product.h"
 
 
 @interface InterfaceController()
@@ -19,7 +20,6 @@
 @property (nonatomic, assign) BOOL                  activityInprogress;
 @property (nonatomic, assign) int                   loadIndex;
 @end
-
 
 @implementation InterfaceController
 
@@ -102,15 +102,31 @@
             [request setMappedCompletionBlockSuccess:^(AIRequest *request, AIResponse *response) {
                 
                 NSString *intent = response.result.metadata.intentName;
-                _fulfilmentRes = response.result.fulfillment.speech;
                 
-                if ([intent length] && [self isValidIntraction:intent]) {
-                    NSLog(@"Text : %@", intent);
-                    
-                    if([intent isEqualToString:@"PRODUCTADD"]) {
-                        [self updateProduct:YES product:intent];
-                    } else if([intent isEqualToString:@"PRODUCTREMOVE"]) {
-                       [self updateProduct:NO product:intent];
+                NSDictionary *paramsArray = response.result.parameters;
+                
+                if (paramsArray != nil && intent != nil) {
+                    for(NSString *key in [paramsArray allKeys]){
+                        
+                        AIResponseParameter *valObj = [paramsArray valueForKey:key];
+                        NSString *val               = valObj.stringValue;
+               
+                        
+                        if(!([val isEqualToString:@""] || val == nil) && ([key isEqualToString:@"productfruits"] || [key isEqualToString:@"productstationery"] || [key isEqualToString:@"productvegetables"]) ) {
+                            Product *prod = [[Product alloc] init];
+                            prod.name = val;
+                            prod.section = key;
+                            
+                            if([key isEqualToString:@"productfruits"]) {
+                                prod.price = fruitPrice;
+                            } else if([key isEqualToString:@"productvegetables"]) {
+                                prod.price = vegPrice;
+                            } else if([key isEqualToString:@"productstationery"]) {
+                                prod.price = stationaryPrice;
+                            }
+                            [self updateProduct:intent product:prod];
+                            break;
+                        }
                     }
                 } else {
                     [self showError];
@@ -127,9 +143,11 @@
     
 }
 
--(void) updateProduct:(BOOL) isADD product:(NSString*) product{
+-(void) updateProduct:(NSString*) intent product:(Product*) product{
     
-    if(isADD){
+    
+    if([intent isEqualToString:@"AddProduct"]){
+        [_products addObject:product];
         if(kAppInForeground)
             [self pushControllerWithName:@"ProductListView" context:_products];
         else {
@@ -137,6 +155,7 @@
             [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeSuccess];
         }
     } else {
+        [_products removeObject:product];
         if(kAppInForeground)
             [self pushControllerWithName:@"ProductListView" context:_products];
         else {
