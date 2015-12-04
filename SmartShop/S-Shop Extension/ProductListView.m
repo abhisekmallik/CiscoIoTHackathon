@@ -9,11 +9,13 @@
 #import "ProductListView.h"
 #import "ProductRow.h"
 #import "Product.h"
+#import <ApiAI/ApiAI.h>
 
 
 @interface ProductListView ()
 
-@property (nonatomic, strong) NSArray *productList;
+@property (nonatomic, strong) NSArray               *productList;
+@property (nonatomic, strong) NSString              *fulfilmentRes;
 
 @end
 
@@ -42,6 +44,11 @@
 -(IBAction) loadMap:(id)sender {
     [[HEREPlacesDataProvider sharedInstance] searchForPlaceWithString:@"lulu hypermarket"];
 }
+
+-(IBAction) editProduct:(id)sender {
+    [self popToRootController];
+}
+
 
 // handle success search
 -(void) successWithPlaces:(NSArray*) placesList {
@@ -89,6 +96,7 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+    [[NSNotificationCenter defaultCenter] removeObserver:@"NearestShop"];
 }
 
 

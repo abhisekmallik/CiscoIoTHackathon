@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *productTable;
 
 -(IBAction) loadMap:(id)sender;
+-(IBAction) editProduct:(id)sender;
 
 @end

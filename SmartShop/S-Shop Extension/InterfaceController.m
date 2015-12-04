@@ -50,8 +50,12 @@
         [_recordGroup setHidden:FALSE];
     }
     
-    if(_loadIndex > -1)
+    if(_loadIndex > -1) {
         [self forwardRequest];
+    } else if ([_products count] > 0) {
+        [self recordSound:nil];
+    }
+        
     
 }
 
