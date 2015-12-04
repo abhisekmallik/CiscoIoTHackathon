@@ -19,8 +19,8 @@
     
     id <AIConfiguration> configuration = [[AIDefaultConfiguration alloc] init];
     
-    configuration.clientAccessToken = @"360b1c4b73c840a7abdb9a8fd0459184";
-    configuration.subscriptionKey = @"7904794d-77e9-47ab-b7dd-a141411826c2";
+    configuration.clientAccessToken = @"da08c64688234acbb801fc05768ec7b1";
+    configuration.subscriptionKey = @"01b9957d-cf84-4c40-b1e5-db61833a038b";
     
     apiai.configuration = configuration;
     

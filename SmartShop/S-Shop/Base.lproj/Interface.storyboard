@@ -53,7 +53,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="295" y="191"/>
+            <point key="canvasLocation" x="191" y="125"/>
         </scene>
         <!--MapController-->
         <scene sceneID="Nvv-Gb-bFm">
@@ -76,6 +76,40 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="459" y="32.75"/>
+        </scene>
+        <!--Product List-->
+        <scene sceneID="0Ux-hP-iL2">
+            <objects>
+                <controller identifier="ProductListView" id="5YC-Zy-6uW" userLabel="Product List" customClass="ProductListView">
+                    <items>
+                        <table alignment="left" id="h3o-as-2ug">
+                            <items>
+                                <tableRow identifier="ProductRow" id="XP8-qT-Ajy" customClass="ProductRow">
+                                    <group key="rootItem" width="1" height="48" alignment="left" layout="vertical" id="TP2-MQ-Zod">
+                                        <items>
+                                            <label alignment="left" text="Product" id="SwI-4U-Ht7">
+                                                <fontDescription key="font" type="system" pointSize="19"/>
+                                            </label>
+                                            <label alignment="left" text="Price" id="bF1-ZK-kdM"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.59314090149999998" green="0.67758098820000001" blue="0.37743062399999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ProductPrice" destination="bF1-ZK-kdM" id="Cvq-cI-ryT"/>
+                                        <outlet property="ProductTitle" destination="SwI-4U-Ht7" id="VH9-VU-nxu"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Edit" id="IuB-5t-PXR"/>
+                        <button width="1" alignment="left" title="Way To Shop" id="cwv-gN-pOO"/>
+                    </items>
+                    <connections>
+                        <outlet property="productTable" destination="h3o-as-2ug" id="6UM-Vj-2Ek"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="295"/>
         </scene>
     </scenes>
 </document>

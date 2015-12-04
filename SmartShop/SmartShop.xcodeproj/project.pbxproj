@@ -39,6 +39,12 @@
 		525F05871C119707004F816B /* NSDictionary+HEREParseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05821C119707004F816B /* NSDictionary+HEREParseError.m */; };
 		525F05881C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05841C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m */; };
 		525F05891C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05861C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m */; };
+		525F058B1C1198DF004F816B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525F058A1C1198DF004F816B /* MapKit.framework */; };
+		525F058D1C1198F9004F816B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525F058C1C1198F9004F816B /* MapKit.framework */; };
+		525F058F1C119918004F816B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525F058E1C119918004F816B /* AVFoundation.framework */; };
+		525F05941C119C8F004F816B /* ProductListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05911C119C8F004F816B /* ProductListView.m */; };
+		525F05951C119C8F004F816B /* ProductRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05931C119C8F004F816B /* ProductRow.m */; };
+		525F05981C11A124004F816B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05971C11A124004F816B /* Product.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +165,15 @@
 		525F05841C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HEREPlacesDictionaryHelper.m"; sourceTree = "<group>"; };
 		525F05851C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HERERoutesDictionaryHelper.h"; sourceTree = "<group>"; };
 		525F05861C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HERERoutesDictionaryHelper.m"; sourceTree = "<group>"; };
+		525F058A1C1198DF004F816B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		525F058C1C1198F9004F816B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		525F058E1C119918004F816B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		525F05901C119C8F004F816B /* ProductListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListView.h; sourceTree = "<group>"; };
+		525F05911C119C8F004F816B /* ProductListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListView.m; sourceTree = "<group>"; };
+		525F05921C119C8F004F816B /* ProductRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductRow.h; sourceTree = "<group>"; };
+		525F05931C119C8F004F816B /* ProductRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductRow.m; sourceTree = "<group>"; };
+		525F05961C11A124004F816B /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		525F05971C11A124004F816B /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		52EDAC1D9F9C13D531291225 /* Pods-S-Shop Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-Shop Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-S-Shop Extension/Pods-S-Shop Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartShop/Pods-SmartShop.debug.xcconfig"; sourceTree = "<group>"; };
 		6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +187,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525F058F1C119918004F816B /* AVFoundation.framework in Frameworks */,
+				525F058D1C1198F9004F816B /* MapKit.framework in Frameworks */,
 				312DE0BEC76568996E968574 /* libPods-SmartShop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525F058B1C1198DF004F816B /* MapKit.framework in Frameworks */,
 				5021BCF6BE2E8E3B62923A75 /* libPods-S-Shop Extension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,9 +316,15 @@
 				520416021C115DAE001586D5 /* ExtensionDelegate.m */,
 				520416041C115DAE001586D5 /* NotificationController.h */,
 				520416051C115DAE001586D5 /* NotificationController.m */,
+				525F05901C119C8F004F816B /* ProductListView.h */,
+				525F05911C119C8F004F816B /* ProductListView.m */,
+				525F05921C119C8F004F816B /* ProductRow.h */,
+				525F05931C119C8F004F816B /* ProductRow.m */,
 				520416071C115DAE001586D5 /* Assets.xcassets */,
 				520416091C115DAE001586D5 /* Info.plist */,
 				520415FC1C115DAE001586D5 /* Supporting Files */,
+				525F05961C11A124004F816B /* Product.h */,
+				525F05971C11A124004F816B /* Product.m */,
 			);
 			path = "S-Shop Extension";
 			sourceTree = "<group>";
@@ -356,6 +380,9 @@
 		6F00F0D46E1742161536694C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				525F058E1C119918004F816B /* AVFoundation.framework */,
+				525F058C1C1198F9004F816B /* MapKit.framework */,
+				525F058A1C1198DF004F816B /* MapKit.framework */,
 				7ECDABC8528F43C5EFB9E04E /* libPods-S-Shop Extension.a */,
 				6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */,
 			);
@@ -699,6 +726,7 @@
 			files = (
 				525F05801C1196FC004F816B /* StepInLeg.m in Sources */,
 				525F05871C119707004F816B /* NSDictionary+HEREParseError.m in Sources */,
+				525F05981C11A124004F816B /* Product.m in Sources */,
 				525F05891C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m in Sources */,
 				525F05881C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m in Sources */,
 				525F05671C11966D004F816B /* MapInterfaceController.m in Sources */,
@@ -706,6 +734,8 @@
 				525F056E1C1196F1004F816B /* HERERoutesDataProvider.m in Sources */,
 				520416001C115DAE001586D5 /* InterfaceController.m in Sources */,
 				520416061C115DAE001586D5 /* NotificationController.m in Sources */,
+				525F05951C119C8F004F816B /* ProductRow.m in Sources */,
+				525F05941C119C8F004F816B /* ProductListView.m in Sources */,
 				525F057D1C1196FC004F816B /* RouteInfo.m in Sources */,
 				525F056D1C1196F1004F816B /* HEREPlacesDataProvider.m in Sources */,
 				525F057C1C1196FC004F816B /* Place.m in Sources */,

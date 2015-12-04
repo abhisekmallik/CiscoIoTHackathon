@@ -29,32 +29,9 @@
     // Configure interface objects here.
     
     [_pleaseWaitAnimation setImageNamed:@"frame"];
-    _validIntractions   = [NSArray arrayWithObjects:@"PRODUCTADD", @"PRODUCTREMOVE", @"MAP", nil];
+    _validIntractions   = [NSArray arrayWithObjects:@"PRODUCTADD", @"PRODUCTREMOVE", nil];
     _activityInprogress = FALSE;
     _loadIndex          = -1;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadNearestShop:) name:@"NearestShop" object:nil];
-    
-}
-
--(void) loadNearestShop :(NSNotification *)notification{
-    
-    [self dismissProgress];
-    
-    NSArray *arr = (NSArray*) notification.object;
-    
-    if(arr) {
-        if(kAppInForeground)
-            [self pushControllerWithName:@"MapController" context:arr];
-        else {
-            _loadIndex = 2;
-            _places = arr;
-            [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeSuccess];
-        }
-    } else {
-        
-        [self showError];
-    }
     
 }
 
@@ -82,10 +59,7 @@
     if(_loadIndex == 0 && _loadIndex == 1){
     // Add Remove Product
         
-        
-    } else if(_loadIndex == 2) {
-        
-        [self pushControllerWithName:@"MapController" context:nil];
+        [self pushControllerWithName:@"MapController" context:_places];
         
     } else if(_loadIndex == 1000) {
         
@@ -132,8 +106,6 @@
                        
                     } else if([intent isEqualToString:@"PRODUCTREMOVE"]) {
                        
-                    } else if([intent isEqualToString:@"MAP"]) {
-                        
                     }
                 } else {
                     [self showError];
