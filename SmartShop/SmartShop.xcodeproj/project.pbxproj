@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4CECFA1C11AE1A00AFE9F6 /* ABPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CECF71C11AE1A00AFE9F6 /* ABPointExtension.swift */; };
+		1A4CECFB1C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CECF81C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift */; };
+		1A4CECFC1C11AE1A00AFE9F6 /* ABTextLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CECF91C11AE1A00AFE9F6 /* ABTextLayerExtension.swift */; };
+		1A4CED001C11AE2200AFE9F6 /* ItemListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CECFE1C11AE2200AFE9F6 /* ItemListController.m */; };
+		1A4CED011C11AE2200AFE9F6 /* ItemListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4CECFF1C11AE2200AFE9F6 /* ItemListController.xib */; };
 		312DE0BEC76568996E968574 /* libPods-SmartShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */; };
 		5021BCF6BE2E8E3B62923A75 /* libPods-S-Shop Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECDABC8528F43C5EFB9E04E /* libPods-S-Shop Extension.a */; };
 		520415B51C115CE6001586D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415B41C115CE6001586D5 /* main.m */; };
 		520415B81C115CE6001586D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415B71C115CE6001586D5 /* AppDelegate.m */; };
-		520415BB1C115CE6001586D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415BA1C115CE6001586D5 /* ViewController.m */; };
 		520415BE1C115CE6001586D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520415BC1C115CE6001586D5 /* Main.storyboard */; };
 		520415C11C115CE6001586D5 /* SmartShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 520415BF1C115CE6001586D5 /* SmartShop.xcdatamodeld */; };
 		520415C31C115CE6001586D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520415C21C115CE6001586D5 /* Assets.xcassets */; };
@@ -104,12 +108,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A4CECF61C11AE1900AFE9F6 /* SmartShop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartShop-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A4CECF71C11AE1A00AFE9F6 /* ABPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPointExtension.swift; sourceTree = "<group>"; };
+		1A4CECF81C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABSteppedProgessBar.swift; sourceTree = "<group>"; };
+		1A4CECF91C11AE1A00AFE9F6 /* ABTextLayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABTextLayerExtension.swift; sourceTree = "<group>"; };
+		1A4CECFD1C11AE2200AFE9F6 /* ItemListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListController.h; sourceTree = "<group>"; };
+		1A4CECFE1C11AE2200AFE9F6 /* ItemListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListController.m; sourceTree = "<group>"; };
+		1A4CECFF1C11AE2200AFE9F6 /* ItemListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListController.xib; sourceTree = "<group>"; };
 		520415B01C115CE6001586D5 /* SmartShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520415B41C115CE6001586D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		520415B61C115CE6001586D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		520415B71C115CE6001586D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		520415B91C115CE6001586D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		520415BA1C115CE6001586D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		520415BD1C115CE6001586D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		520415C01C115CE6001586D5 /* SmartShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartShop.xcdatamodel; sourceTree = "<group>"; };
 		520415C21C115CE6001586D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -248,17 +257,22 @@
 		520415B21C115CE6001586D5 /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				1A4CECFD1C11AE2200AFE9F6 /* ItemListController.h */,
+				1A4CECFE1C11AE2200AFE9F6 /* ItemListController.m */,
+				1A4CECFF1C11AE2200AFE9F6 /* ItemListController.xib */,
+				1A4CECF71C11AE1A00AFE9F6 /* ABPointExtension.swift */,
+				1A4CECF81C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift */,
+				1A4CECF91C11AE1A00AFE9F6 /* ABTextLayerExtension.swift */,
 				525F055E1C1190FC004F816B /* SmartShop.entitlements */,
 				520415B61C115CE6001586D5 /* AppDelegate.h */,
 				520415B71C115CE6001586D5 /* AppDelegate.m */,
-				520415B91C115CE6001586D5 /* ViewController.h */,
-				520415BA1C115CE6001586D5 /* ViewController.m */,
 				520415BC1C115CE6001586D5 /* Main.storyboard */,
 				520415C21C115CE6001586D5 /* Assets.xcassets */,
 				520415C41C115CE6001586D5 /* LaunchScreen.storyboard */,
 				520415C71C115CE6001586D5 /* Info.plist */,
 				520415BF1C115CE6001586D5 /* SmartShop.xcdatamodeld */,
 				520415B31C115CE6001586D5 /* Supporting Files */,
+				1A4CECF61C11AE1900AFE9F6 /* SmartShop-Bridging-Header.h */,
 			);
 			path = SmartShop;
 			sourceTree = "<group>";
@@ -562,6 +576,7 @@
 			files = (
 				520415C61C115CE6001586D5 /* LaunchScreen.storyboard in Resources */,
 				520415C31C115CE6001586D5 /* Assets.xcassets in Resources */,
+				1A4CED011C11AE2200AFE9F6 /* ItemListController.xib in Resources */,
 				520415BE1C115CE6001586D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,10 +712,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520415BB1C115CE6001586D5 /* ViewController.m in Sources */,
 				520415B81C115CE6001586D5 /* AppDelegate.m in Sources */,
 				520415B51C115CE6001586D5 /* main.m in Sources */,
+				1A4CECFB1C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift in Sources */,
+				1A4CECFC1C11AE1A00AFE9F6 /* ABTextLayerExtension.swift in Sources */,
 				520415C11C115CE6001586D5 /* SmartShop.xcdatamodeld in Sources */,
+				1A4CED001C11AE2200AFE9F6 /* ItemListController.m in Sources */,
+				1A4CECFA1C11AE1A00AFE9F6 /* ABPointExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,14 +902,18 @@
 			baseConfigurationReference = 5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SmartShop/SmartShop.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SmartShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartShop/SmartShop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -900,14 +922,17 @@
 			baseConfigurationReference = D1DDA3CD0E0EE8BBAADC7BE7 /* Pods-SmartShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SmartShop/SmartShop.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SmartShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartShop/SmartShop-Bridging-Header.h";
 			};
 			name = Release;
 		};

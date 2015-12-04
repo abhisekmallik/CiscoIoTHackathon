@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ItemListController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    _itemVC = [[ItemListController alloc] initWithNibName:@"ItemListController" bundle:nil];
+    UINavigationController *navCntrl = [[UINavigationController alloc] initWithRootViewController:_itemVC];
+    self.window.rootViewController = navCntrl;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
