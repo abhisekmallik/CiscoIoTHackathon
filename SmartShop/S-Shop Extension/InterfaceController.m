@@ -60,7 +60,7 @@
     if(_loadIndex == 0 && _loadIndex == 1){
     // Add Remove Product
         
-        [self pushControllerWithName:@"MapController" context:_products];
+        [self pushControllerWithName:@"ProductListView" context:_products];
         
     } else if(_loadIndex == 1000) {
         
@@ -126,9 +126,19 @@
 -(void) updateProduct:(BOOL) isADD product:(NSString*) product{
     
     if(isADD){
-        
+        if(kAppInForeground)
+            [self pushControllerWithName:@"ProductListView" context:_products];
+        else {
+            _loadIndex = 0;
+            [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeSuccess];
+        }
     } else {
-        
+        if(kAppInForeground)
+            [self pushControllerWithName:@"ProductListView" context:_products];
+        else {
+            _loadIndex = 1;
+            [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeSuccess];
+        }
     }
     
 }
