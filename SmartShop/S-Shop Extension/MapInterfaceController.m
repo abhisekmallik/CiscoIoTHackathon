@@ -69,8 +69,8 @@
         
         MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(locationCenter, 2000.0, 2000.0);
         
-        region.span.latitudeDelta = (box.topLeftlatitude - locationCenter.latitude) * 2.5;
-        region.span.longitudeDelta = (locationCenter.longitude - box.topLeftlongitude) * 2.5;
+        region.span.latitudeDelta = (box.topLeftlatitude - locationCenter.latitude) * 3;
+        region.span.longitudeDelta = (locationCenter.longitude - box.topLeftlongitude) * 3;
         
         [_map setRegion:region];
         

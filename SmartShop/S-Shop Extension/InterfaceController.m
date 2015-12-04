@@ -14,7 +14,6 @@
 @interface InterfaceController()
 
 @property (nonatomic, strong) dispatch_semaphore_t  assertionSemaphore;
-@property (nonatomic, strong) NSArray               *validIntractions;
 @property (nonatomic, strong) NSString              *fulfilmentRes;
 @property (nonatomic, strong) NSMutableArray        *products;
 @property (nonatomic, assign) BOOL                  activityInprogress;
@@ -29,7 +28,6 @@
     // Configure interface objects here.
     
     [_pleaseWaitAnimation setImageNamed:@"frame"];
-    _validIntractions   = [NSArray arrayWithObjects:@"PRODUCTADD", @"PRODUCTREMOVE", nil];
     _products = [[NSMutableArray alloc] init];
     _activityInprogress = FALSE;
     _loadIndex          = -1;
@@ -52,9 +50,7 @@
     
     if(_loadIndex > -1) {
         [self forwardRequest];
-    } else if ([_products count] > 0) {
-        [self recordSound:nil];
-    }
+    } 
         
     
 }
@@ -145,7 +141,7 @@
 
 -(void) updateProduct:(NSString*) intent product:(Product*) product{
     
-    
+    [self dismissProgress];
     if([intent isEqualToString:@"AddProduct"]){
         [_products addObject:product];
         if(kAppInForeground)
@@ -244,16 +240,6 @@
 }
 
 
-
--(BOOL) isValidIntraction:(NSString*) resText {
-    
-    for (NSString *key in _validIntractions) {
-        if ([resText isEqualToString:key])
-            return TRUE;
-    }
-    
-    return FALSE;
-}
 
 
 - (void)didDeactivate {

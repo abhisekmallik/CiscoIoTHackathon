@@ -82,6 +82,20 @@
             <objects>
                 <controller identifier="ProductListView" id="5YC-Zy-6uW" userLabel="Product List" customClass="ProductListView">
                     <items>
+                        <group width="1" height="125" alignment="left" hidden="YES" layout="vertical" id="Knr-Ha-uBF" userLabel="ProgressBarGroup">
+                            <items>
+                                <group width="1" alignment="left" id="1nU-8J-6gx">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="Please Wait .." textAlignment="center" id="eBV-xY-pKq"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="oNd-ub-VO0">
+                                    <items>
+                                        <imageView height="97" alignment="left" id="Boh-iB-JJX"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                         <table alignment="left" id="h3o-as-2ug">
                             <items>
                                 <tableRow identifier="ProductRow" id="XP8-qT-Ajy" customClass="ProductRow">
@@ -101,15 +115,27 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <button width="1" alignment="left" title="Edit" id="IuB-5t-PXR"/>
-                        <button width="1" alignment="left" title="Way To Shop" id="cwv-gN-pOO"/>
+                        <button width="1" alignment="left" title="Edit" id="IuB-5t-PXR">
+                            <connections>
+                                <action selector="editProduct:" destination="5YC-Zy-6uW" id="6S5-Yo-dPe"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Way To Shop" id="cwv-gN-pOO">
+                            <connections>
+                                <action selector="loadMap:" destination="5YC-Zy-6uW" id="Fdc-CS-kIh"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="edit" destination="IuB-5t-PXR" id="iiE-Ni-JAk"/>
+                        <outlet property="mapButton" destination="cwv-gN-pOO" id="yVl-h3-sE3"/>
+                        <outlet property="pleaseWaitAnimation" destination="Boh-iB-JJX" id="f3v-Ih-ofb"/>
                         <outlet property="productTable" destination="h3o-as-2ug" id="6UM-Vj-2Ek"/>
+                        <outlet property="progressGroup" destination="Knr-Ha-uBF" id="eld-rJ-nNe"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="295"/>
+            <point key="canvasLocation" x="468" y="315.5"/>
         </scene>
     </scenes>
 </document>

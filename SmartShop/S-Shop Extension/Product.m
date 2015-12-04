@@ -42,10 +42,16 @@
     
 }
 
+
 - (BOOL)isEqual:(id)object {
     
     Product *comObj = (Product*) object;
-    return self.name == comObj.name;
+    
+    if([self.name isEqualToString:comObj.name]) {
+        return TRUE;
+    }
+    return FALSE;
+    
     
 }
 

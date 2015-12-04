@@ -15,6 +15,17 @@
 
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *productTable;
 
+
+@property (nonatomic, weak) IBOutlet WKInterfaceImage *pleaseWaitAnimation;
+
+@property (nonatomic, weak) IBOutlet WKInterfaceGroup *progressGroup;
+
+@property (nonatomic, weak) IBOutlet WKInterfaceButton *edit;
+
+@property (nonatomic, weak) IBOutlet WKInterfaceButton *mapButton;
+
+
+
 -(IBAction) loadMap:(id)sender;
 -(IBAction) editProduct:(id)sender;
 
