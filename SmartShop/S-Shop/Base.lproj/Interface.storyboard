@@ -1,39 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15C27e" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kfd-QQ-7tk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <!--Shopping Lister-->
+        <scene sceneID="qpS-de-G7g">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="kfd-QQ-7tk" userLabel="Shopping Lister" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <group width="1" height="146" alignment="left" layout="vertical" id="JvS-So-54b" userLabel="Record Group">
+                            <items>
+                                <group width="1" height="55" alignment="left" id="RWu-DE-o9u">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="Press and Speak to create your shopping list" textAlignment="center" numberOfLines="3" id="hdE-QY-OIA" userLabel="Start ">
+                                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" height="80" alignment="left" id="zxr-Qa-FEA">
+                                    <items>
+                                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="RecordImage" id="hY1-gb-Vmx">
+                                            <color key="backgroundColor" red="0.59314090149999998" green="0.67758098820000001" blue="0.37743062399999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="recordSound:" destination="kfd-QQ-7tk" id="Tak-JI-cwE"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="144" alignment="left" hidden="YES" layout="vertical" id="Gmb-bt-nvm" userLabel="Progress Bar Group">
+                            <items>
+                                <group width="1" height="32.5" alignment="left" id="ItX-Gx-2yP">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="Please Wait ..." textAlignment="center" numberOfLines="2" id="0hG-Qb-Pjx"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="103" alignment="left" id="KFt-bI-4nQ">
+                                    <items>
+                                        <imageView height="1" alignment="left" id="grW-Uf-5jL" userLabel="Progress Image"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="pleaseWaitAnimation" destination="grW-Uf-5jL" id="Isn-w9-7tg"/>
+                        <outlet property="progressGroup" destination="Gmb-bt-nvm" id="p7e-IK-6nB"/>
+                        <outlet property="recordGroup" destination="JvS-So-54b" id="Id3-UK-mfL"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="295" y="191"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--MapController-->
+        <scene sceneID="Nvv-Gb-bFm">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider=""/>
+                <controller identifier="MapController" id="W8P-Ms-g6c" customClass="MapInterfaceController">
+                    <items>
+                        <map height="125" alignment="left" id="99R-Jq-f4U"/>
+                        <button width="1" height="35.5" alignment="left" title="View in iPhone" id="owU-OD-6YS">
+                            <color key="titleColor" red="1" green="0.37530393569999998" blue="0.42312568859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                            <connections>
+                                <action selector="handOff:" destination="W8P-Ms-g6c" id="hAf-uy-xqM"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="99R-Jq-f4U" id="mI0-Da-1Lu"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="459" y="32.75"/>
         </scene>
     </scenes>
 </document>

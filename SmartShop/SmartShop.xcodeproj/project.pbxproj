@@ -26,6 +26,19 @@
 		520416061C115DAE001586D5 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520416051C115DAE001586D5 /* NotificationController.m */; };
 		520416081C115DAE001586D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520416071C115DAE001586D5 /* Assets.xcassets */; };
 		5204160C1C115DAE001586D5 /* S-Shop.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 520415EB1C115DAE001586D5 /* S-Shop.app */; };
+		525F05641C119586004F816B /* CurrentLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05631C119586004F816B /* CurrentLocationProvider.m */; };
+		525F05671C11966D004F816B /* MapInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05661C11966D004F816B /* MapInterfaceController.m */; };
+		525F056D1C1196F1004F816B /* HEREPlacesDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F056A1C1196F1004F816B /* HEREPlacesDataProvider.m */; };
+		525F056E1C1196F1004F816B /* HERERoutesDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F056C1C1196F1004F816B /* HERERoutesDataProvider.m */; };
+		525F057B1C1196FC004F816B /* BoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05701C1196FC004F816B /* BoundingBox.m */; };
+		525F057C1C1196FC004F816B /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05721C1196FC004F816B /* Place.m */; };
+		525F057D1C1196FC004F816B /* RouteInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05741C1196FC004F816B /* RouteInfo.m */; };
+		525F057E1C1196FC004F816B /* RouteLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05761C1196FC004F816B /* RouteLeg.m */; };
+		525F057F1C1196FC004F816B /* RouteSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05781C1196FC004F816B /* RouteSummary.m */; };
+		525F05801C1196FC004F816B /* StepInLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F057A1C1196FC004F816B /* StepInLeg.m */; };
+		525F05871C119707004F816B /* NSDictionary+HEREParseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05821C119707004F816B /* NSDictionary+HEREParseError.m */; };
+		525F05881C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05841C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m */; };
+		525F05891C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05861C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +129,36 @@
 		520416051C115DAE001586D5 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		520416071C115DAE001586D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		520416091C115DAE001586D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525F055E1C1190FC004F816B /* SmartShop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SmartShop.entitlements; sourceTree = "<group>"; };
+		525F055F1C119124004F816B /* S-Shop Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "S-Shop Extension.entitlements"; sourceTree = "<group>"; };
+		525F05601C119139004F816B /* S-Shop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "S-Shop.entitlements"; sourceTree = "<group>"; };
+		525F05611C1191CA004F816B /* WatchExtCons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchExtCons.h; sourceTree = "<group>"; };
+		525F05621C119586004F816B /* CurrentLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentLocationProvider.h; sourceTree = "<group>"; };
+		525F05631C119586004F816B /* CurrentLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationProvider.m; sourceTree = "<group>"; };
+		525F05651C11966D004F816B /* MapInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInterfaceController.h; sourceTree = "<group>"; };
+		525F05661C11966D004F816B /* MapInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInterfaceController.m; sourceTree = "<group>"; };
+		525F05691C1196F1004F816B /* HEREPlacesDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEREPlacesDataProvider.h; sourceTree = "<group>"; };
+		525F056A1C1196F1004F816B /* HEREPlacesDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEREPlacesDataProvider.m; sourceTree = "<group>"; };
+		525F056B1C1196F1004F816B /* HERERoutesDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HERERoutesDataProvider.h; sourceTree = "<group>"; };
+		525F056C1C1196F1004F816B /* HERERoutesDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HERERoutesDataProvider.m; sourceTree = "<group>"; };
+		525F056F1C1196FC004F816B /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBox.h; sourceTree = "<group>"; };
+		525F05701C1196FC004F816B /* BoundingBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoundingBox.m; sourceTree = "<group>"; };
+		525F05711C1196FC004F816B /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		525F05721C1196FC004F816B /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		525F05731C1196FC004F816B /* RouteInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteInfo.h; sourceTree = "<group>"; };
+		525F05741C1196FC004F816B /* RouteInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteInfo.m; sourceTree = "<group>"; };
+		525F05751C1196FC004F816B /* RouteLeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteLeg.h; sourceTree = "<group>"; };
+		525F05761C1196FC004F816B /* RouteLeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteLeg.m; sourceTree = "<group>"; };
+		525F05771C1196FC004F816B /* RouteSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteSummary.h; sourceTree = "<group>"; };
+		525F05781C1196FC004F816B /* RouteSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteSummary.m; sourceTree = "<group>"; };
+		525F05791C1196FC004F816B /* StepInLeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepInLeg.h; sourceTree = "<group>"; };
+		525F057A1C1196FC004F816B /* StepInLeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepInLeg.m; sourceTree = "<group>"; };
+		525F05811C119707004F816B /* NSDictionary+HEREParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HEREParseError.h"; sourceTree = "<group>"; };
+		525F05821C119707004F816B /* NSDictionary+HEREParseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HEREParseError.m"; sourceTree = "<group>"; };
+		525F05831C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HEREPlacesDictionaryHelper.h"; sourceTree = "<group>"; };
+		525F05841C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HEREPlacesDictionaryHelper.m"; sourceTree = "<group>"; };
+		525F05851C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HERERoutesDictionaryHelper.h"; sourceTree = "<group>"; };
+		525F05861C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HERERoutesDictionaryHelper.m"; sourceTree = "<group>"; };
 		52EDAC1D9F9C13D531291225 /* Pods-S-Shop Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-Shop Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-S-Shop Extension/Pods-S-Shop Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartShop/Pods-SmartShop.debug.xcconfig"; sourceTree = "<group>"; };
 		6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +230,7 @@
 		520415B21C115CE6001586D5 /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				525F055E1C1190FC004F816B /* SmartShop.entitlements */,
 				520415B61C115CE6001586D5 /* AppDelegate.h */,
 				520415B71C115CE6001586D5 /* AppDelegate.m */,
 				520415B91C115CE6001586D5 /* ViewController.h */,
@@ -230,6 +274,7 @@
 		520415EC1C115DAE001586D5 /* S-Shop */ = {
 			isa = PBXGroup;
 			children = (
+				525F05601C119139004F816B /* S-Shop.entitlements */,
 				520415ED1C115DAE001586D5 /* Interface.storyboard */,
 				520415F01C115DAE001586D5 /* Assets.xcassets */,
 				520415F21C115DAE001586D5 /* Info.plist */,
@@ -240,8 +285,15 @@
 		520415FB1C115DAE001586D5 /* S-Shop Extension */ = {
 			isa = PBXGroup;
 			children = (
+				525F05681C1196E6004F816B /* MapDataprovider */,
+				525F05621C119586004F816B /* CurrentLocationProvider.h */,
+				525F05631C119586004F816B /* CurrentLocationProvider.m */,
+				525F05611C1191CA004F816B /* WatchExtCons.h */,
+				525F055F1C119124004F816B /* S-Shop Extension.entitlements */,
 				520415FE1C115DAE001586D5 /* InterfaceController.h */,
 				520415FF1C115DAE001586D5 /* InterfaceController.m */,
+				525F05651C11966D004F816B /* MapInterfaceController.h */,
+				525F05661C11966D004F816B /* MapInterfaceController.m */,
 				520416011C115DAE001586D5 /* ExtensionDelegate.h */,
 				520416021C115DAE001586D5 /* ExtensionDelegate.m */,
 				520416041C115DAE001586D5 /* NotificationController.h */,
@@ -259,6 +311,35 @@
 				520415FD1C115DAE001586D5 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525F05681C1196E6004F816B /* MapDataprovider */ = {
+			isa = PBXGroup;
+			children = (
+				525F05691C1196F1004F816B /* HEREPlacesDataProvider.h */,
+				525F056A1C1196F1004F816B /* HEREPlacesDataProvider.m */,
+				525F056B1C1196F1004F816B /* HERERoutesDataProvider.h */,
+				525F056C1C1196F1004F816B /* HERERoutesDataProvider.m */,
+				525F056F1C1196FC004F816B /* BoundingBox.h */,
+				525F05701C1196FC004F816B /* BoundingBox.m */,
+				525F05711C1196FC004F816B /* Place.h */,
+				525F05721C1196FC004F816B /* Place.m */,
+				525F05731C1196FC004F816B /* RouteInfo.h */,
+				525F05741C1196FC004F816B /* RouteInfo.m */,
+				525F05751C1196FC004F816B /* RouteLeg.h */,
+				525F05761C1196FC004F816B /* RouteLeg.m */,
+				525F05771C1196FC004F816B /* RouteSummary.h */,
+				525F05781C1196FC004F816B /* RouteSummary.m */,
+				525F05791C1196FC004F816B /* StepInLeg.h */,
+				525F057A1C1196FC004F816B /* StepInLeg.m */,
+				525F05811C119707004F816B /* NSDictionary+HEREParseError.h */,
+				525F05821C119707004F816B /* NSDictionary+HEREParseError.m */,
+				525F05831C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.h */,
+				525F05841C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m */,
+				525F05851C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.h */,
+				525F05861C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m */,
+			);
+			path = MapDataprovider;
 			sourceTree = "<group>";
 		};
 		587D39017F746B58932E6690 /* Pods */ = {
@@ -390,6 +471,12 @@
 				TargetAttributes = {
 					520415AF1C115CE6001586D5 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VD4986N57V;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					520415CB1C115CE6001586D5 = {
 						CreatedOnToolsVersion = 7.1;
@@ -401,9 +488,21 @@
 					};
 					520415EA1C115DAE001586D5 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VD4986N57V;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					520415F61C115DAE001586D5 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VD4986N57V;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -598,9 +697,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525F05801C1196FC004F816B /* StepInLeg.m in Sources */,
+				525F05871C119707004F816B /* NSDictionary+HEREParseError.m in Sources */,
+				525F05891C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m in Sources */,
+				525F05881C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m in Sources */,
+				525F05671C11966D004F816B /* MapInterfaceController.m in Sources */,
 				520416031C115DAE001586D5 /* ExtensionDelegate.m in Sources */,
+				525F056E1C1196F1004F816B /* HERERoutesDataProvider.m in Sources */,
 				520416001C115DAE001586D5 /* InterfaceController.m in Sources */,
 				520416061C115DAE001586D5 /* NotificationController.m in Sources */,
+				525F057D1C1196FC004F816B /* RouteInfo.m in Sources */,
+				525F056D1C1196F1004F816B /* HEREPlacesDataProvider.m in Sources */,
+				525F057C1C1196FC004F816B /* Place.m in Sources */,
+				525F057E1C1196FC004F816B /* RouteLeg.m in Sources */,
+				525F05641C119586004F816B /* CurrentLocationProvider.m in Sources */,
+				525F057F1C1196FC004F816B /* RouteSummary.m in Sources */,
+				525F057B1C1196FC004F816B /* BoundingBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,10 +854,14 @@
 			baseConfigurationReference = 5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartShop/SmartShop.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -754,10 +870,14 @@
 			baseConfigurationReference = D1DDA3CD0E0EE8BBAADC7BE7 /* Pods-SmartShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartShop/SmartShop.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmartShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -813,10 +933,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52EDAC1D9F9C13D531291225 /* Pods-S-Shop Extension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "S-Shop Extension/S-Shop Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "S-Shop Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -828,10 +952,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B8A7A4DEF3E0F1F1CF7AB86 /* Pods-S-Shop Extension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "S-Shop Extension/S-Shop Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "S-Shop Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -843,10 +971,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "S-Shop/S-Shop.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = S_Shop_Extension;
 				INFOPLIST_FILE = "S-Shop/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -858,10 +990,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "S-Shop/S-Shop.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = S_Shop_Extension;
 				INFOPLIST_FILE = "S-Shop/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
