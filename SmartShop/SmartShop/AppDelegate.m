@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ItemListController.h"
+#import "RootMapViewVCViewController.h"
 
 @interface AppDelegate ()
 
@@ -152,7 +153,27 @@
     NSLog(@"User activity is of type %@, and user info %@", type, userInfo);
     
     
-    restorationHandler(@[self.window.rootViewController]);
+    
+    RootMapViewVCViewController *routeMap = [[RootMapViewVCViewController alloc] initWithNibName:@"RootMapViewVCViewController" bundle:nil];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        // Generate the file path
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:@"yourfilename.dat"];
+        
+        // Save it into file system
+        [[[userActivity userInfo] valueForKey:@"places"] writeToFile:dataPath atomically:YES];
+    });
+    
+    
+    routeMap.places  = (NSArray*)[NSKeyedUnarchiver unarchiveObjectWithData:[[userActivity userInfo] valueForKey:@"places"]];
+    
+    
+    [_itemVC presentViewController:routeMap animated:YES completion:^{
+        
+    }];
+
     
     handled = YES;
     return handled;

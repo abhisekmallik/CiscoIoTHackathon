@@ -58,6 +58,15 @@
 		525F05A81C12201D004F816B /* BoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05701C1196FC004F816B /* BoundingBox.m */; };
 		525F05A91C12202B004F816B /* CurrentLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05631C119586004F816B /* CurrentLocationProvider.m */; };
 		525F05AA1C122321004F816B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05971C11A124004F816B /* Product.m */; };
+		525F05AB1C1236E6004F816B /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05721C1196FC004F816B /* Place.m */; };
+		525F05AC1C123829004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05841C119707004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m */; };
+		525F05AD1C123904004F816B /* HEREPlacesDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F056A1C1196F1004F816B /* HEREPlacesDataProvider.m */; };
+		525F05AE1C12390D004F816B /* RouteInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05741C1196FC004F816B /* RouteInfo.m */; };
+		525F05AF1C123913004F816B /* RouteLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05761C1196FC004F816B /* RouteLeg.m */; };
+		525F05B01C123917004F816B /* RouteSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05781C1196FC004F816B /* RouteSummary.m */; };
+		525F05B11C12391A004F816B /* StepInLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F057A1C1196FC004F816B /* StepInLeg.m */; };
+		525F05B21C12391E004F816B /* NSDictionary+HEREParseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05821C119707004F816B /* NSDictionary+HEREParseError.m */; };
+		525F05B31C123927004F816B /* NSDictionary+HERERoutesDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05861C119707004F816B /* NSDictionary+HERERoutesDictionaryHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -742,18 +751,27 @@
 			files = (
 				520415B81C115CE6001586D5 /* AppDelegate.m in Sources */,
 				520415B51C115CE6001586D5 /* main.m in Sources */,
+				525F05B31C123927004F816B /* NSDictionary+HERERoutesDictionaryHelper.m in Sources */,
 				525F05A71C122010004F816B /* HERERoutesDataProvider.m in Sources */,
 				1A4CECFB1C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift in Sources */,
 				525F05A81C12201D004F816B /* BoundingBox.m in Sources */,
 				1A4CECFC1C11AE1A00AFE9F6 /* ABTextLayerExtension.swift in Sources */,
 				525F05AA1C122321004F816B /* Product.m in Sources */,
+				525F05AB1C1236E6004F816B /* Place.m in Sources */,
+				525F05AF1C123913004F816B /* RouteLeg.m in Sources */,
+				525F05B11C12391A004F816B /* StepInLeg.m in Sources */,
+				525F05AC1C123829004F816B /* NSDictionary+HEREPlacesDictionaryHelper.m in Sources */,
 				520415C11C115CE6001586D5 /* SmartShop.xcdatamodeld in Sources */,
 				525F05A61C121F30004F816B /* RouteLegLine.m in Sources */,
 				525F05A11C121F25004F816B /* RootMapViewVCViewController.m in Sources */,
+				525F05B01C123917004F816B /* RouteSummary.m in Sources */,
 				1A4CED001C11AE2200AFE9F6 /* ItemListController.m in Sources */,
 				525F05A31C121F25004F816B /* RouteMapUtil.m in Sources */,
+				525F05B21C12391E004F816B /* NSDictionary+HEREParseError.m in Sources */,
 				525F05A91C12202B004F816B /* CurrentLocationProvider.m in Sources */,
 				525F05A41C121F25004F816B /* RouteLegBreakPointView.m in Sources */,
+				525F05AD1C123904004F816B /* HEREPlacesDataProvider.m in Sources */,
+				525F05AE1C12390D004F816B /* RouteInfo.m in Sources */,
 				1A4CECFA1C11AE1A00AFE9F6 /* ABPointExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

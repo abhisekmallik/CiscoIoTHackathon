@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemListController">
@@ -23,13 +23,22 @@
                         <constraint firstAttribute="height" constant="40" id="QU4-EG-zxV"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UmM-Z7-VIT">
+                    <rect key="frame" x="20" y="82" width="560" height="498"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="UmM-Z7-VIT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="0ZQ-Do-cNg"/>
+                <constraint firstAttribute="trailing" secondItem="UmM-Z7-VIT" secondAttribute="trailing" constant="20" id="5Ag-lq-5K8"/>
+                <constraint firstAttribute="bottom" secondItem="UmM-Z7-VIT" secondAttribute="bottom" constant="20" id="6A4-dE-J7g"/>
                 <constraint firstItem="0fe-6w-PUw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="EvI-hy-Fx2"/>
                 <constraint firstAttribute="trailing" secondItem="0fe-6w-PUw" secondAttribute="trailing" constant="20" id="H7Y-XJ-nrt"/>
                 <constraint firstItem="0fe-6w-PUw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="L1t-Rq-RUg"/>
+                <constraint firstItem="UmM-Z7-VIT" firstAttribute="top" secondItem="0fe-6w-PUw" secondAttribute="bottom" constant="22" id="bF7-xM-8GV"/>
             </constraints>
         </view>
     </objects>
