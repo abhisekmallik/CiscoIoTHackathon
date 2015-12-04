@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <WatchConnectivity/WatchConnectivity.h>
+
 @class ItemListController;
 
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, WCSessionDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) ItemListController *itemVC;
+@property (nonatomic, strong) NSMutableArray                *productList;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

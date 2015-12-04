@@ -87,7 +87,7 @@
     
     NSData *dataOnObject = [NSKeyedArchiver archivedDataWithRootObject:_array];
     
-    [self updateUserActivity:@"com.NLP.Bank.V-Teller.MapRoute" userInfo:@{@"places": dataOnObject} webpageURL:nil];
+    [self updateUserActivity:@"com.hack.cisco.MapRoute" userInfo:@{@"places": dataOnObject} webpageURL:nil];
 }
 
 @end

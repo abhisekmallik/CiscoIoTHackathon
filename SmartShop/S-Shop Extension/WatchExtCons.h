@@ -11,7 +11,7 @@
 #define WatchExtCons_h
 
 // Watch Extension constants
-static NSString * const kSharedGroup        = @"group.hack.cisco.shopsmart";
+static NSString * const kSharedGroup        = @"group.cisco.hack.cmx";
 static NSString * const kVoiceRecordFile    = @"recording.mp4";
 static NSString * const kRecoderSubmitTitle = @"Send";
 static int const        kServiceTimeOut     = 30;

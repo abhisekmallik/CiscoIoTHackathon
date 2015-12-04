@@ -49,6 +49,15 @@
 		525F05941C119C8F004F816B /* ProductListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05911C119C8F004F816B /* ProductListView.m */; };
 		525F05951C119C8F004F816B /* ProductRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05931C119C8F004F816B /* ProductRow.m */; };
 		525F05981C11A124004F816B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05971C11A124004F816B /* Product.m */; };
+		525F05A11C121F25004F816B /* RootMapViewVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F059A1C121F25004F816B /* RootMapViewVCViewController.m */; };
+		525F05A21C121F25004F816B /* RootMapViewVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525F059B1C121F25004F816B /* RootMapViewVCViewController.xib */; };
+		525F05A31C121F25004F816B /* RouteMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F059D1C121F25004F816B /* RouteMapUtil.m */; };
+		525F05A41C121F25004F816B /* RouteLegBreakPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F059F1C121F25004F816B /* RouteLegBreakPointView.m */; };
+		525F05A61C121F30004F816B /* RouteLegLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05A51C121F30004F816B /* RouteLegLine.m */; };
+		525F05A71C122010004F816B /* HERERoutesDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F056C1C1196F1004F816B /* HERERoutesDataProvider.m */; };
+		525F05A81C12201D004F816B /* BoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05701C1196FC004F816B /* BoundingBox.m */; };
+		525F05A91C12202B004F816B /* CurrentLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05631C119586004F816B /* CurrentLocationProvider.m */; };
+		525F05AA1C122321004F816B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F05971C11A124004F816B /* Product.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +192,15 @@
 		525F05931C119C8F004F816B /* ProductRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductRow.m; sourceTree = "<group>"; };
 		525F05961C11A124004F816B /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		525F05971C11A124004F816B /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		525F05991C121F25004F816B /* RootMapViewVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootMapViewVCViewController.h; sourceTree = "<group>"; };
+		525F059A1C121F25004F816B /* RootMapViewVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootMapViewVCViewController.m; sourceTree = "<group>"; };
+		525F059B1C121F25004F816B /* RootMapViewVCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootMapViewVCViewController.xib; sourceTree = "<group>"; };
+		525F059C1C121F25004F816B /* RouteMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteMapUtil.h; sourceTree = "<group>"; };
+		525F059D1C121F25004F816B /* RouteMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteMapUtil.m; sourceTree = "<group>"; };
+		525F059E1C121F25004F816B /* RouteLegBreakPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteLegBreakPointView.h; sourceTree = "<group>"; };
+		525F059F1C121F25004F816B /* RouteLegBreakPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteLegBreakPointView.m; sourceTree = "<group>"; };
+		525F05A01C121F25004F816B /* RouteLegLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteLegLine.h; sourceTree = "<group>"; };
+		525F05A51C121F30004F816B /* RouteLegLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteLegLine.m; sourceTree = "<group>"; };
 		52EDAC1D9F9C13D531291225 /* Pods-S-Shop Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-Shop Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-S-Shop Extension/Pods-S-Shop Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB2F529E43D677D54782130 /* Pods-SmartShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartShop/Pods-SmartShop.debug.xcconfig"; sourceTree = "<group>"; };
 		6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +275,15 @@
 		520415B21C115CE6001586D5 /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				525F05991C121F25004F816B /* RootMapViewVCViewController.h */,
+				525F059A1C121F25004F816B /* RootMapViewVCViewController.m */,
+				525F059B1C121F25004F816B /* RootMapViewVCViewController.xib */,
+				525F059C1C121F25004F816B /* RouteMapUtil.h */,
+				525F059D1C121F25004F816B /* RouteMapUtil.m */,
+				525F059E1C121F25004F816B /* RouteLegBreakPointView.h */,
+				525F059F1C121F25004F816B /* RouteLegBreakPointView.m */,
+				525F05A01C121F25004F816B /* RouteLegLine.h */,
+				525F05A51C121F30004F816B /* RouteLegLine.m */,
 				1A4CECFD1C11AE2200AFE9F6 /* ItemListController.h */,
 				1A4CECFE1C11AE2200AFE9F6 /* ItemListController.m */,
 				1A4CECFF1C11AE2200AFE9F6 /* ItemListController.xib */,
@@ -512,7 +539,7 @@
 				TargetAttributes = {
 					520415AF1C115CE6001586D5 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = VD4986N57V;
+						DevelopmentTeam = BPEEBRBBYD;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -529,7 +556,7 @@
 					};
 					520415EA1C115DAE001586D5 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = VD4986N57V;
+						DevelopmentTeam = BPEEBRBBYD;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -538,7 +565,7 @@
 					};
 					520415F61C115DAE001586D5 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = VD4986N57V;
+						DevelopmentTeam = BPEEBRBBYD;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -577,6 +604,7 @@
 				520415C61C115CE6001586D5 /* LaunchScreen.storyboard in Resources */,
 				520415C31C115CE6001586D5 /* Assets.xcassets in Resources */,
 				1A4CED011C11AE2200AFE9F6 /* ItemListController.xib in Resources */,
+				525F05A21C121F25004F816B /* RootMapViewVCViewController.xib in Resources */,
 				520415BE1C115CE6001586D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,10 +742,18 @@
 			files = (
 				520415B81C115CE6001586D5 /* AppDelegate.m in Sources */,
 				520415B51C115CE6001586D5 /* main.m in Sources */,
+				525F05A71C122010004F816B /* HERERoutesDataProvider.m in Sources */,
 				1A4CECFB1C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift in Sources */,
+				525F05A81C12201D004F816B /* BoundingBox.m in Sources */,
 				1A4CECFC1C11AE1A00AFE9F6 /* ABTextLayerExtension.swift in Sources */,
+				525F05AA1C122321004F816B /* Product.m in Sources */,
 				520415C11C115CE6001586D5 /* SmartShop.xcdatamodeld in Sources */,
+				525F05A61C121F30004F816B /* RouteLegLine.m in Sources */,
+				525F05A11C121F25004F816B /* RootMapViewVCViewController.m in Sources */,
 				1A4CED001C11AE2200AFE9F6 /* ItemListController.m in Sources */,
+				525F05A31C121F25004F816B /* RouteMapUtil.m in Sources */,
+				525F05A91C12202B004F816B /* CurrentLocationProvider.m in Sources */,
+				525F05A41C121F25004F816B /* RouteLegBreakPointView.m in Sources */,
 				1A4CECFA1C11AE1A00AFE9F6 /* ABPointExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,7 +945,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SmartShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartShop/SmartShop-Bridging-Header.h";
@@ -929,7 +965,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SmartShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartShop/SmartShop-Bridging-Header.h";
@@ -942,7 +978,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SmartShopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShop.app/SmartShop";
 			};
@@ -954,7 +990,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SmartShopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShop.app/SmartShop";
 			};
@@ -965,7 +1001,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = SmartShopUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShopUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = SmartShop;
 				USES_XCTRUNNER = YES;
@@ -977,7 +1013,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = SmartShopUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShopUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShopUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = SmartShop;
 				USES_XCTRUNNER = YES;
@@ -993,7 +1029,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "S-Shop Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShop.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -1012,7 +1048,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "S-Shop Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShop.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -1031,7 +1067,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = S_Shop_Extension;
 				INFOPLIST_FILE = "S-Shop/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShop.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -1050,7 +1086,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = S_Shop_Extension;
 				INFOPLIST_FILE = "S-Shop/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx.SmartShop.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.hack.cmx1.SmartShop.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;

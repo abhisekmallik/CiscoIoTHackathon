@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.cisco.hack.cmx.SmartShop</string>
+	<string>com.cisco.hack.cmx1.SmartShop</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

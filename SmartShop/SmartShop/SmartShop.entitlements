@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.hack.cisco.shopsmart</string>
+		<string>group.cisco.hack.cmx</string>
 	</array>
 </dict>
 </plist>
