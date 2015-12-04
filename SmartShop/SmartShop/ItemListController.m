@@ -9,8 +9,10 @@
 #import "ItemListController.h"
 #import "SmartShop-Swift.h"
 #import "RootMapViewVCViewController.h"
+#import "AppDelegate.h"
+#import "Product.h"
 
-@interface ItemListController ()
+@interface ItemListController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -41,14 +43,39 @@
        
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableView Delegates
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44.0f;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    Product *prod = [delegate.productList objectAtIndex:indexPath.row];
+    
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    return  [delegate.productList count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:simpleTableIdentifier];
+    }
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    Product *prod = [delegate.productList objectAtIndex:indexPath.row];
+    cell.textLabel.text = prod.name;
+    cell.detailTextLabel.text = prod.price;
+    return cell;
+}
 
 @end
