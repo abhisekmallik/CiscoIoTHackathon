@@ -15,7 +15,7 @@
 @property (nonatomic, strong) dispatch_semaphore_t  assertionSemaphore;
 @property (nonatomic, strong) NSArray               *validIntractions;
 @property (nonatomic, strong) NSString              *fulfilmentRes;
-@property (nonatomic, strong) NSArray               *places;
+@property (nonatomic, strong) NSMutableArray        *products;
 @property (nonatomic, assign) BOOL                  activityInprogress;
 @property (nonatomic, assign) int                   loadIndex;
 @end
@@ -30,6 +30,7 @@
     
     [_pleaseWaitAnimation setImageNamed:@"frame"];
     _validIntractions   = [NSArray arrayWithObjects:@"PRODUCTADD", @"PRODUCTREMOVE", nil];
+    _products = [[NSMutableArray alloc] init];
     _activityInprogress = FALSE;
     _loadIndex          = -1;
     
@@ -59,7 +60,7 @@
     if(_loadIndex == 0 && _loadIndex == 1){
     // Add Remove Product
         
-        [self pushControllerWithName:@"MapController" context:_places];
+        [self pushControllerWithName:@"MapController" context:_products];
         
     } else if(_loadIndex == 1000) {
         
@@ -103,9 +104,9 @@
                     NSLog(@"Text : %@", intent);
                     
                     if([intent isEqualToString:@"PRODUCTADD"]) {
-                       
+                        [self updateProduct:YES product:intent];
                     } else if([intent isEqualToString:@"PRODUCTREMOVE"]) {
-                       
+                       [self updateProduct:NO product:intent];
                     }
                 } else {
                     [self showError];
@@ -122,6 +123,13 @@
     
 }
 
+-(void) updateProduct:(BOOL) isADD product:(NSString*) product{
+    if(isADD){
+        
+    } else {
+        
+    }
+}
 
 -(void) showProgress {
     
