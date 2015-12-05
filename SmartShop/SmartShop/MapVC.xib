@@ -16,45 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivU-B0-StM" customClass="ABSteppedProgressBar" customModule="SmartShop">
-                    <rect key="frame" x="20" y="20" width="560" height="40"/>
-                    <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="3wi-cW-fh2"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                            <real key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="displayNumbers" value="YES"/>
-                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfPoints">
-                            <integer key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="progressRadius">
-                            <real key="value" value="15"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="currentIndex">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2j-UA-91J">
-                    <rect key="frame" x="0.0" y="80" width="600" height="520"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <animations/>
                 </scrollView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ivU-B0-StM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hgd-Ia-ub9"/>
-                <constraint firstItem="ivU-B0-StM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Iih-eF-ufm"/>
-                <constraint firstAttribute="trailing" secondItem="ivU-B0-StM" secondAttribute="trailing" constant="20" id="Ria-pw-DHV"/>
                 <constraint firstAttribute="trailing" secondItem="v2j-UA-91J" secondAttribute="trailing" id="Wfw-WB-lpn"/>
-                <constraint firstItem="v2j-UA-91J" firstAttribute="top" secondItem="ivU-B0-StM" secondAttribute="bottom" constant="20" id="WzH-WK-xAd"/>
+                <constraint firstItem="v2j-UA-91J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gA0-Sa-llF"/>
                 <constraint firstItem="v2j-UA-91J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iTA-Hu-bnb"/>
                 <constraint firstItem="v2j-UA-91J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kPm-rf-gDp"/>
-                <constraint firstItem="ivU-B0-StM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="kj5-Mf-jaO"/>
                 <constraint firstAttribute="bottom" secondItem="v2j-UA-91J" secondAttribute="bottom" id="oHq-d5-K1J"/>
             </constraints>
             <point key="canvasLocation" x="119" y="471"/>
