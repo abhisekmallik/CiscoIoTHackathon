@@ -40,7 +40,7 @@
     }
     
     
-    _itemVC = [[ItemListController alloc] initWithNibName:@"ItemListController" bundle:nil];
+    _itemVC = [[ItemListController alloc] initWithNibName:@"ItemListController" bundle:nil mode:ListMode];
     UINavigationController *navCntrl = [[UINavigationController alloc] initWithRootViewController:_itemVC];
     self.window.rootViewController = navCntrl;
     [self.window makeKeyAndVisible];
