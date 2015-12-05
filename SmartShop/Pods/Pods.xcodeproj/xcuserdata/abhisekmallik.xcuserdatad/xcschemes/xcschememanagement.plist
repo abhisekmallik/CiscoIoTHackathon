@@ -6,58 +6,53 @@
 	<dict>
 		<key>MRProgress.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-S-Shop Extension-AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-S-Shop Extension-ApiAI.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-S-Shop Extension.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-SmartShop-AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-SmartShop-ApiAI.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-SmartShop.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TesseractOCRiOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3C1B133FE3D99EF1CBA420C432B92448</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>46EA497D5BF5308981D8EE485B681DFD</key>
+		<key>06C3E43F58AD8A4A336A2F1F232A4014</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>5E5D0B355548D4B2B825FC1683ADF126</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>68E36A3C0EE3450E3C6457249DDEE5A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,6 +63,21 @@
 			<true/>
 		</dict>
 		<key>9BF7CDBD0D90D368E7F29E267B773DFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A98DECBD170ECDA85147CC7B6A1EE261</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C85C6587C43FE254618FE00402D39806</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2EF4C1C7A67E43126D9B881BB9F54E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

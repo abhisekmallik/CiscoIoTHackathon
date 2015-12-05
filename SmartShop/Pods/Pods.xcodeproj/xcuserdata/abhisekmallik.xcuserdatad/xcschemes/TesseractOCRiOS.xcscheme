@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BDAC8746DADAB50D9072A4BE'
-               BlueprintName = 'Pods-S-Shop Extension'
+               BlueprintIdentifier = '7F805BC182675B53CBFB3183'
+               BlueprintName = 'TesseractOCRiOS'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-S-Shop Extension.a'>
+               BuildableName = 'libTesseractOCRiOS.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BDAC8746DADAB50D9072A4BE'
-               BlueprintName = 'Pods-S-Shop Extension'
+               BlueprintIdentifier = 'BF8D4686CB53AC2FD1D42F2B'
+               BlueprintName = 'Pods-SmartShop'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-S-Shop Extension.a'>
+               BuildableName = 'libPods-SmartShop.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
