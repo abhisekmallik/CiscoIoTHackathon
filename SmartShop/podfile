@@ -6,6 +6,7 @@ target 'SmartShop' do
     pod 'ApiAI/VoiceFileRequest'
     pod 'AFNetworking'
     pod 'MRProgress'
+    pod 'TesseractOCRiOS'
     
 end
 

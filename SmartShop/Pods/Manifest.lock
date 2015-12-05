@@ -55,6 +55,7 @@ PODS:
   - MRProgress/ProgressBaseClass (0.8.2)
   - MRProgress/Stopable (0.8.2):
     - MRProgress/Helper
+  - TesseractOCRiOS (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -62,10 +63,12 @@ DEPENDENCIES:
   - ApiAI/ResponseMapping
   - ApiAI/VoiceFileRequest
   - MRProgress
+  - TesseractOCRiOS
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   ApiAI: b5b99670ed4b4aa208fef88633b05142db1ff470
   MRProgress: f4cfe862082418e8f542f077772283f425d6c699
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
 
 COCOAPODS: 0.39.0

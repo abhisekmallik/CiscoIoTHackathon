@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '39399A16FE05008F193E244B'
+               BlueprintIdentifier = 'CD4D5C43EC8F3C4AAC98DCA7'
                BlueprintName = 'Pods-SmartShop-ApiAI'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-SmartShop-ApiAI.a'>
