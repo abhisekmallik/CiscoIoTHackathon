@@ -21,8 +21,14 @@
     // Create a queue to perform recognition operations
     self.operationQueue = [[NSOperationQueue alloc] init];
     [self performSelector:@selector(openCamera:) withObject:nil afterDelay:0.5];
+    
+    self.navigationController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
      
 
+}
+
+-(void) Add:(id) sender {
+    
 }
 
 -(void)recognizeImageWithTesseract:(UIImage *)image
