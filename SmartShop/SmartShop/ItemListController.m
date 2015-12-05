@@ -129,7 +129,7 @@
     }
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     Product *prod = [delegate.productList objectAtIndex:indexPath.row];
-    cell.textLabel.text = prod.name;
+    cell.textLabel.text = [prod.name capitalizedString];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"AED %0.2f",[prod.price floatValue]];
     return cell;
 }
