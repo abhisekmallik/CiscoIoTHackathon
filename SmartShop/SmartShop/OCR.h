@@ -11,12 +11,13 @@
 
 
 
-@interface OCR : UIViewController <G8TesseractDelegate>
+@interface OCR : UIViewController <G8TesseractDelegate, UIImagePickerControllerDelegate,
+UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageToRecognize;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 - (IBAction)openCamera:(id)sender;
-- (IBAction)recognizeSampleImage:(id)sender;
+
 
 @end

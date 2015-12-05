@@ -20,6 +20,9 @@
     
     // Create a queue to perform recognition operations
     self.operationQueue = [[NSOperationQueue alloc] init];
+    [self performSelector:@selector(openCamera:) withObject:nil afterDelay:0.5];
+     
+
 }
 
 -(void)recognizeImageWithTesseract:(UIImage *)image
@@ -114,14 +117,7 @@
     }
 }
 
-- (IBAction)recognizeSampleImage:(id)sender {
-    [self recognizeImageWithTesseract:[UIImage imageNamed:@"image_sample.jpg"]];
-}
 
-- (IBAction)clearCache:(id)sender
-{
-    [G8Tesseract clearCache];
-}
 
 #pragma mark - UIImagePickerController Delegate
 

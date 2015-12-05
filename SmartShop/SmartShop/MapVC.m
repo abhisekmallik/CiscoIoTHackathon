@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import <CoreMotion/CoreMotion.h>
 #import "SmartShop-Swift.h"
+#import "OCR.h"
 
 
 #include <sys/socket.h>
@@ -171,7 +172,7 @@
     NSLog(@"tag %ld",button.tag);
     
     if (button.tag == 111) {
-        
+        OCR *orc = [OCR alloc] initWithNibName:<#(nullable NSString *)#> bundle:<#(nullable NSBundle *)#>
     }
 }
 
