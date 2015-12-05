@@ -22,7 +22,7 @@
     self.operationQueue = [[NSOperationQueue alloc] init];
     [self performSelector:@selector(openCamera:) withObject:nil afterDelay:0.5];
     
-    self.navigationController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
+    self.navigationController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
      
 
 }

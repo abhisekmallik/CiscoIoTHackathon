@@ -37,6 +37,7 @@
     }
     
     [self configureTable];
+    
     NSData *dataOnObject = [NSKeyedArchiver archivedDataWithRootObject:_productList];
     NSDictionary *productDict = [[NSDictionary alloc] initWithObjectsAndKeys:dataOnObject, @"product", nil];
     [[WCSession defaultSession] updateApplicationContext:productDict error:nil];
@@ -136,6 +137,11 @@
         [_productList removeObject:product];
         
     }
+    
+    NSData *dataOnObject = [NSKeyedArchiver archivedDataWithRootObject:_productList];
+    NSDictionary *productDict = [[NSDictionary alloc] initWithObjectsAndKeys:dataOnObject, @"product", nil];
+    [[WCSession defaultSession] updateApplicationContext:productDict error:nil];
+    
     [self configureTable];
 }
 
@@ -227,8 +233,20 @@
         ProductRow *row = [_productTable rowControllerAtIndex:i];
        
         Product *res = (Product*)_productList[i];
-        [row.ProductPrice setText:res.price];
-        [row.ProductTitle setText:res.name];
+        NSString *stringPrice = [res.price stringByAppendingString:@" AED"];
+        
+        [row.ProductPrice setText:stringPrice];
+        
+        
+        
+        NSString *firstChar = [res.name substringToIndex:1];
+        
+        /* remove any diacritic mark */
+        NSString *folded = [firstChar stringByFoldingWithOptions:NSDiacriticInsensitiveSearch locale:nil];
+        
+        /* create the new string */
+        NSString *result = [[folded uppercaseString] stringByAppendingString:[res.name substringFromIndex:1]];
+        [row.ProductTitle setText:result];
         
     }
 }

@@ -14,7 +14,7 @@
                             <items>
                                 <group width="1" height="55" alignment="left" id="RWu-DE-o9u">
                                     <items>
-                                        <label alignment="center" verticalAlignment="center" text="Press and Speak to create your shopping list" textAlignment="center" numberOfLines="3" id="hdE-QY-OIA" userLabel="Start ">
+                                        <label alignment="center" verticalAlignment="center" text="Press and talk to create your shopping list" textAlignment="center" numberOfLines="3" id="hdE-QY-OIA" userLabel="Start ">
                                             <fontDescription key="font" type="boldSystem" pointSize="16"/>
                                         </label>
                                     </items>
@@ -35,7 +35,7 @@
                             <items>
                                 <group width="1" height="32.5" alignment="left" id="ItX-Gx-2yP">
                                     <items>
-                                        <label alignment="center" verticalAlignment="center" text="Please Wait ..." textAlignment="center" numberOfLines="2" id="0hG-Qb-Pjx"/>
+                                        <label alignment="center" verticalAlignment="center" text="Please wait ..." textAlignment="center" numberOfLines="2" id="0hG-Qb-Pjx"/>
                                     </items>
                                 </group>
                                 <group width="1" height="103" alignment="left" id="KFt-bI-4nQ">
@@ -86,7 +86,7 @@
                             <items>
                                 <group width="1" alignment="left" id="1nU-8J-6gx">
                                     <items>
-                                        <label alignment="center" verticalAlignment="center" text="Please Wait .." textAlignment="center" id="eBV-xY-pKq"/>
+                                        <label alignment="center" verticalAlignment="center" text="Please wait .." textAlignment="center" id="eBV-xY-pKq"/>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" id="oNd-ub-VO0">
@@ -120,7 +120,7 @@
                                 <action selector="editProduct:" destination="5YC-Zy-6uW" id="6S5-Yo-dPe"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Way To Shop" id="cwv-gN-pOO">
+                        <button width="1" alignment="left" title="Way to store" id="cwv-gN-pOO">
                             <connections>
                                 <action selector="loadMap:" destination="5YC-Zy-6uW" id="Fdc-CS-kIh"/>
                             </connections>
