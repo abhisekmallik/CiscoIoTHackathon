@@ -329,15 +329,15 @@
 				520415BF1C115CE6001586D5 /* SmartShop.xcdatamodeld */,
 				520415B31C115CE6001586D5 /* Supporting Files */,
 				1A4CECF61C11AE1900AFE9F6 /* SmartShop-Bridging-Header.h */,
-<<<<<<< HEAD
+
 				525F07D41C129C00004F816B /* OCR.h */,
 				525F07D51C129C00004F816B /* OCR.m */,
 				525F07D61C129C00004F816B /* OCR.xib */,
-=======
+
 				1AAED6AA1C12A3690053D3EC /* PhotoViewController.h */,
 				1AAED6AB1C12A3690053D3EC /* PhotoViewController.m */,
 				1AAED6AC1C12A3690053D3EC /* PhotoViewController.xib */,
->>>>>>> origin/master
+
 			);
 			path = SmartShop;
 			sourceTree = "<group>";

@@ -10,12 +10,8 @@
 #import "AppDelegate.h"
 #import <CoreMotion/CoreMotion.h>
 #import "SmartShop-Swift.h"
-<<<<<<< HEAD
 #import "OCR.h"
 
-=======
-#import "PhotoViewController.h"
->>>>>>> origin/master
 
 #include <sys/socket.h>
 #include <sys/sysctl.h>
@@ -177,7 +173,9 @@
     
     if (button.tag == 111) {
 
-        OCR *orc = [OCR alloc] initWithNibName:<#(nullable NSString *)#> bundle:<#(nullable NSBundle *)#>
+        OCR *orc = [[OCR alloc] initWithNibName:@"OCR" bundle:nil];
+        
+        [self.navigationController pushViewController:orc animated:YES];
 
     }
 }
