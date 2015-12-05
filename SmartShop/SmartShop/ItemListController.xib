@@ -9,14 +9,14 @@
             <connections>
                 <outlet property="btnApplePay" destination="5hU-XW-25H" id="dIk-XS-qdb"/>
                 <outlet property="btnContinue" destination="eTV-7h-WcV" id="9LY-cb-Ow1"/>
-                <outlet property="imgView" destination="iOH-cR-Ox2" id="KMg-ou-D6E"/>
+                <outlet property="imgView" destination="iOH-cR-Ox2" id="VJn-Ms-94S"/>
                 <outlet property="lblTotal" destination="ckl-Ig-f2D" id="rb9-vo-Xx2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-7h-WcV">
@@ -69,11 +69,11 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ApplePayment" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-cR-Ox2">
-                    <rect key="frame" x="8" y="393" width="300" height="274"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ApplePayment" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-cR-Ox2">
+                    <rect key="frame" x="65" y="600" width="300" height="274"/>
                     <animations/>
                     <constraints>
-                        <constraint firstAttribute="width" id="CgI-AI-lvJ"/>
+                        <constraint firstAttribute="width" constant="300" id="CgI-AI-lvJ"/>
                         <constraint firstAttribute="height" constant="274" id="gH7-Iv-ZH0"/>
                     </constraints>
                 </imageView>
@@ -83,7 +83,6 @@
             <constraints>
                 <constraint firstItem="5hU-XW-25H" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0WY-x3-QX0"/>
                 <constraint firstItem="UmM-Z7-VIT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3tO-1E-e3c"/>
-                <constraint firstAttribute="bottom" secondItem="iOH-cR-Ox2" secondAttribute="bottom" id="4pn-tU-bLD"/>
                 <constraint firstItem="UmM-Z7-VIT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AIa-6W-mIp"/>
                 <constraint firstItem="iOH-cR-Ox2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fka-vu-dBU"/>
                 <constraint firstItem="UmM-Z7-VIT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="HPQ-4O-HO8"/>
@@ -91,7 +90,6 @@
                 <constraint firstItem="ckl-Ig-f2D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iHV-OJ-kUT"/>
                 <constraint firstAttribute="trailing" secondItem="UmM-Z7-VIT" secondAttribute="trailing" constant="20" id="uCz-35-Z1q"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="370.5" y="327.5"/>
         </view>
     </objects>

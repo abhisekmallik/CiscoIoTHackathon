@@ -19,10 +19,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnContinue;
 @property (weak, nonatomic) IBOutlet UIButton *btnApplePay;
 - (IBAction)applePaymentAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 - (IBAction)continueAction:(id)sender;
 @property (assign, nonatomic) ScreenMode mode;
-@property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) UITapGestureRecognizer *gesture;
 @end
 
@@ -39,8 +39,10 @@
 
 - (void)tapped:(UITapGestureRecognizer *)gesture {
     [UIView animateWithDuration:0.5 animations:^{
-        _imgView.alpha = 0.0f;
-        
+        CGRect frame = _imgView.frame;
+        frame.origin.y += 274;
+        //        frame.origin.x = ([UIScreen mainScreen].bounds.size.width - 300)/2;
+        _imgView.frame = frame;
     } completion:^(BOOL finished) {
         
     }];
@@ -79,10 +81,10 @@
     _gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
     _gesture.numberOfTapsRequired = 1;
     
-    _imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ApplePayment"]];
     _imgView.userInteractionEnabled = YES;
     CGRect frame = _imgView.frame;
-    frame.origin = CGPointMake(0, [UIScreen mainScreen].bounds.size.height +_imgView.frame.size.height);
+    frame.size = CGSizeMake(300, 274);
+    frame.origin = CGPointMake(0, [UIScreen mainScreen].bounds.size.height + 274);
     [_imgView addGestureRecognizer:_gesture];
 }
 
@@ -135,17 +137,16 @@
 }
 
 - (IBAction)applePaymentAction:(id)sender {
-//    [UIView animateWithDuration:0.5 animations:^{
-//    } completion:^(BOOL finished) {
-//        
-//    }];
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect frame = _imgView.frame;
+        frame.origin.y -= 274;
+//        frame.origin.x = ([UIScreen mainScreen].bounds.size.width - 300)/2;
+        _imgView.frame = frame;
+    } completion:^(BOOL finished) {
+        
+    }];
     
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.3];
-    // animation duration in seconds
-    _imgView.alpha = 1.0;
-
-    [UIView commitAnimations];
+//    _imgView.hidden = NO;
 }
 
 - (IBAction)continueAction:(id)sender {
