@@ -14,6 +14,8 @@
 		1A4CED011C11AE2200AFE9F6 /* ItemListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4CECFF1C11AE2200AFE9F6 /* ItemListController.xib */; };
 		1A4CED4D1C125DA200AFE9F6 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CED4B1C125DA200AFE9F6 /* MapVC.m */; };
 		1A4CED4E1C125DA200AFE9F6 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4CED4C1C125DA200AFE9F6 /* MapVC.xib */; };
+		1AAED6AD1C12A3690053D3EC /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAED6AB1C12A3690053D3EC /* PhotoViewController.m */; };
+		1AAED6AE1C12A3690053D3EC /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAED6AC1C12A3690053D3EC /* PhotoViewController.xib */; };
 		312DE0BEC76568996E968574 /* libPods-SmartShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6060960CD264BAEF44CE7E33 /* libPods-SmartShop.a */; };
 		5021BCF6BE2E8E3B62923A75 /* libPods-S-Shop Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECDABC8528F43C5EFB9E04E /* libPods-S-Shop Extension.a */; };
 		520415B51C115CE6001586D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 520415B41C115CE6001586D5 /* main.m */; };
@@ -137,6 +139,9 @@
 		1A4CED4A1C125DA200AFE9F6 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
 		1A4CED4B1C125DA200AFE9F6 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
 		1A4CED4C1C125DA200AFE9F6 /* MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		1AAED6AA1C12A3690053D3EC /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		1AAED6AB1C12A3690053D3EC /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		1AAED6AC1C12A3690053D3EC /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
 		520415B01C115CE6001586D5 /* SmartShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520415B41C115CE6001586D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		520415B61C115CE6001586D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -316,6 +321,9 @@
 				520415BF1C115CE6001586D5 /* SmartShop.xcdatamodeld */,
 				520415B31C115CE6001586D5 /* Supporting Files */,
 				1A4CECF61C11AE1900AFE9F6 /* SmartShop-Bridging-Header.h */,
+				1AAED6AA1C12A3690053D3EC /* PhotoViewController.h */,
+				1AAED6AB1C12A3690053D3EC /* PhotoViewController.m */,
+				1AAED6AC1C12A3690053D3EC /* PhotoViewController.xib */,
 			);
 			path = SmartShop;
 			sourceTree = "<group>";
@@ -620,6 +628,7 @@
 				1A4CED4E1C125DA200AFE9F6 /* MapVC.xib in Resources */,
 				520415C31C115CE6001586D5 /* Assets.xcassets in Resources */,
 				1A4CED011C11AE2200AFE9F6 /* ItemListController.xib in Resources */,
+				1AAED6AE1C12A3690053D3EC /* PhotoViewController.xib in Resources */,
 				525F05A21C121F25004F816B /* RootMapViewVCViewController.xib in Resources */,
 				520415BE1C115CE6001586D5 /* Main.storyboard in Resources */,
 			);
@@ -763,6 +772,7 @@
 				1A4CECFB1C11AE1A00AFE9F6 /* ABSteppedProgessBar.swift in Sources */,
 				525F05A81C12201D004F816B /* BoundingBox.m in Sources */,
 				1A4CECFC1C11AE1A00AFE9F6 /* ABTextLayerExtension.swift in Sources */,
+				1AAED6AD1C12A3690053D3EC /* PhotoViewController.m in Sources */,
 				525F05AA1C122321004F816B /* Product.m in Sources */,
 				525F05AB1C1236E6004F816B /* Place.m in Sources */,
 				525F05AF1C123913004F816B /* RouteLeg.m in Sources */,

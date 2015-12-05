@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import <CoreMotion/CoreMotion.h>
 #import "SmartShop-Swift.h"
-
+#import "PhotoViewController.h"
 
 #include <sys/socket.h>
 #include <sys/sysctl.h>
@@ -171,7 +171,8 @@
     NSLog(@"tag %ld",button.tag);
     
     if (button.tag == 111) {
-        
+        PhotoViewController *photo = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
+        [self.navigationController pushViewController:photo animated:YES];
     }
 }
 
