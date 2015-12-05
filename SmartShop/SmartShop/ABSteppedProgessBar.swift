@@ -35,7 +35,7 @@ import CoreGraphics
         }
     }
     
-    public var currentIndex: Int = 0 {
+    @IBInspectable public var currentIndex: Int = 0 {
         willSet(newValue){
             if let delegate = self.delegate {
                 delegate.progressBar?(self, willSelectItemAtIndex: newValue)
@@ -384,7 +384,6 @@ import CoreGraphics
     func gestureAction(gestureRecognizer:UIGestureRecognizer) {
         if(gestureRecognizer.state == UIGestureRecognizerState.Ended ||
             gestureRecognizer.state == UIGestureRecognizerState.Changed ) {
-                
                 let touchPoint = gestureRecognizer.locationInView(self)
                 
                 var smallestDistance = CGFloat(Float.infinity)
@@ -409,5 +408,10 @@ import CoreGraphics
                 }
         }
     }
+    
+//    public func incrementIndex(selectedIndex:Int) {
+//        
+//        
+//    }
     
 }

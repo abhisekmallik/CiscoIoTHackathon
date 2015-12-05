@@ -12,8 +12,12 @@
 #import "AppDelegate.h"
 #import "Product.h"
 
-@interface ItemListController () <UITableViewDataSource, UITableViewDelegate>
+#import "MapVC.h"
 
+@interface ItemListController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *lblTotal;
+
+- (IBAction)continueAction:(id)sender;
 @end
 
 @implementation ItemListController
@@ -29,7 +33,14 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
         self.extendedLayoutIncludesOpaqueBars = YES;
     }
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    CGFloat price = 0.0f;
+    for (Product *p in delegate.productList) {
+        price += [p.price floatValue];
+    }
+    _lblTotal.text = [NSString stringWithFormat:@"Total : AED %0.2f",price];
     
+    self.title = @"Wish List";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,8 +85,12 @@
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     Product *prod = [delegate.productList objectAtIndex:indexPath.row];
     cell.textLabel.text = prod.name;
-    cell.detailTextLabel.text = prod.price;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"AED %0.2f",[prod.price floatValue]];
     return cell;
 }
 
+- (IBAction)continueAction:(id)sender {
+    MapVC *map = [[MapVC alloc] initWithNibName:@"MapVC" bundle:nil];
+    [self.navigationController pushViewController:map animated:YES];
+}
 @end

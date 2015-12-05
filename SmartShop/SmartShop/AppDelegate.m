@@ -23,6 +23,23 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:@"productlist.dat"];
+    
+    
+    NSError *error;
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL isDir = NO;
+    if ([fileManager fileExistsAtPath:dataPath isDirectory:&isDir]){
+        NSData *data = [NSData dataWithContentsOfFile:dataPath];
+        _productList = (NSMutableArray*)[NSKeyedUnarchiver unarchiveObjectWithData:data];
+
+    }
+    
+    
     _itemVC = [[ItemListController alloc] initWithNibName:@"ItemListController" bundle:nil];
     UINavigationController *navCntrl = [[UINavigationController alloc] initWithRootViewController:_itemVC];
     self.window.rootViewController = navCntrl;
@@ -35,6 +52,19 @@
     }
     
     return YES;
+}
+
+
+- (void)loadItemList {
+    
+}
+
+- (void)loadMapView {
+    
+}
+
+- (void)loadCheckout {
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -158,12 +188,12 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         // Generate the file path
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-        NSString *documentsDirectory = [paths objectAtIndex:0];
-        NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:@"yourfilename.dat"];
-        
-        // Save it into file system
-        [[[userActivity userInfo] valueForKey:@"places"] writeToFile:dataPath atomically:YES];
+//        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+//        NSString *documentsDirectory = [paths objectAtIndex:0];
+//        NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:@"yourfilename.dat"];
+//        
+//        // Save it into file system
+//        [[[userActivity userInfo] valueForKey:@"places"] writeToFile:dataPath atomically:YES];
     });
     
     
@@ -185,6 +215,27 @@
     NSData *dataOnObject = (NSData*)[applicationContext valueForKey:@"product"];
     
     _productList = (NSMutableArray*)[NSKeyedUnarchiver unarchiveObjectWithData:dataOnObject];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        // Generate the file path
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:@"productlist.dat"];
+        
+        
+        NSError *error;
+        
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        BOOL isDir = NO;
+        if ([fileManager fileExistsAtPath:dataPath isDirectory:&isDir]){
+            [fileManager removeItemAtPath:dataPath error:&error];
+        }
+        
+        
+        // Save it into file system
+        [dataOnObject writeToFile:dataPath atomically:YES];
+        
+    });
     
 }
 

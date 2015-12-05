@@ -11,12 +11,14 @@
 #import <WatchConnectivity/WatchConnectivity.h>
 
 @class ItemListController;
+@class MapVC;
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, WCSessionDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) ItemListController *itemVC;
+@property (strong, nonatomic) MapVC *mapVC;
 @property (nonatomic, strong) NSMutableArray                *productList;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
