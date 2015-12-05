@@ -79,9 +79,9 @@
         [self.activityIndicator stopAnimating];
         
         // Spawn an alert with the recognized text
-        if ([recognizedText rangeOfString:@"DIAPER"].location != NSNotFound) {
+        if (TRUE) {
             _webView.hidden = FALSE;
-            NSString *urlString = @"http://www.babygearlab.com/Disposable-Diaper-Reviews/Ratings";
+            NSString *urlString = @"http://www.mouthshut.com/product-reviews/Advice-on-the-use-of-Baby-Diapers-reviews-925048914";
             [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
             
         } else {
