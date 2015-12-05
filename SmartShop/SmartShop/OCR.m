@@ -79,12 +79,15 @@
         [self.activityIndicator stopAnimating];
         
         // Spawn an alert with the recognized text
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OCR Result"
-                                                        message:recognizedText
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
+        if ([recognizedText rangeOfString:@"DIAPER"].location != NSNotFound) {
+            _webView.hidden = FALSE;
+            NSString *urlString = @"http://www.babygearlab.com/Disposable-Diaper-Reviews/Ratings";
+            [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+            
+        } else {
+            _webView.hidden = TRUE;
+            
+        }
     };
     
     // Display the image to be recognized in the view
