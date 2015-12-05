@@ -16,11 +16,35 @@
 
 @interface ItemListController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lblTotal;
+@property (weak, nonatomic) IBOutlet UIButton *btnContinue;
+@property (weak, nonatomic) IBOutlet UIButton *btnApplePay;
+- (IBAction)applePaymentAction:(id)sender;
 
 - (IBAction)continueAction:(id)sender;
+@property (assign, nonatomic) ScreenMode mode;
+@property (strong, nonatomic) IBOutlet UIImageView *imgView;
+@property (strong, nonatomic) UITapGestureRecognizer *gesture;
 @end
 
 @implementation ItemListController
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil mode:(ScreenMode)mode
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        _mode = mode;
+    }
+    return self;
+}
+
+- (void)tapped:(UITapGestureRecognizer *)gesture {
+    [UIView animateWithDuration:0.5 animations:^{
+        _imgView.alpha = 0.0f;
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +57,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
         self.extendedLayoutIncludesOpaqueBars = YES;
     }
+    
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     CGFloat price = 0.0f;
     for (Product *p in delegate.productList) {
@@ -40,7 +65,25 @@
     }
     _lblTotal.text = [NSString stringWithFormat:@"Total : AED %0.2f",price];
     
+    
+    if (_mode == PaymentMode) {
+        _btnContinue.hidden = YES;
+//        _imgView.alpha = 0;
+    } else {
+        _btnApplePay.hidden = YES;
+    }
+    
     self.title = @"Wish List";
+    
+    
+    _gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
+    _gesture.numberOfTapsRequired = 1;
+    
+    _imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ApplePayment"]];
+    _imgView.userInteractionEnabled = YES;
+    CGRect frame = _imgView.frame;
+    frame.origin = CGPointMake(0, [UIScreen mainScreen].bounds.size.height +_imgView.frame.size.height);
+    [_imgView addGestureRecognizer:_gesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,6 +109,8 @@
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     Product *prod = [delegate.productList objectAtIndex:indexPath.row];
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -87,6 +132,20 @@
     cell.textLabel.text = prod.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"AED %0.2f",[prod.price floatValue]];
     return cell;
+}
+
+- (IBAction)applePaymentAction:(id)sender {
+//    [UIView animateWithDuration:0.5 animations:^{
+//    } completion:^(BOOL finished) {
+//        
+//    }];
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.3];
+    // animation duration in seconds
+    _imgView.alpha = 1.0;
+
+    [UIView commitAnimations];
 }
 
 - (IBAction)continueAction:(id)sender {
